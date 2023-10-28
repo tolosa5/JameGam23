@@ -6,18 +6,20 @@ public class PatrolAI : MonoBehaviour
 {
     [SerializeField] float speed = 5f;
     [SerializeField] float waitTime = 1f;
-    bool isWaiting;
     [SerializeField] Transform[] waypoints;
+    bool isWaiting;
 
     int currentWaypoint = 0;
 
     public void PatrolLogic()
     {
-        if(transform.position != waypoints[currentWaypoint].position)
+        
+        Debug.Log(currentWaypoint);
+        if(transform.position.x != waypoints[currentWaypoint].position.x)
         {
             transform.position = Vector3.MoveTowards(transform.position, 
-            waypoints[currentWaypoint].position, speed * Time.deltaTime);
-
+            new Vector3(waypoints[currentWaypoint].position.x, transform.position.y), 
+            speed * Time.deltaTime);
         }
         else if(!isWaiting)
         {
@@ -35,6 +37,7 @@ public class PatrolAI : MonoBehaviour
         if (currentWaypoint >= waypoints.Length)
         currentWaypoint = 0;
 
+        Flip();
         isWaiting = false;
     }
 

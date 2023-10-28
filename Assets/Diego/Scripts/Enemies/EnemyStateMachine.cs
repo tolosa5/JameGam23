@@ -7,14 +7,17 @@ public class EnemyStateMachine : MonoBehaviour
     EnemyDetection enemyDetectionScr;
     EnemyFollow enemyFollowScr;
     PatrolAI patrolScr;
+    EnemyLeave enemyLeave;
 
-    [HideInInspector] public enum States{Patrolling, Following, Leaving};
+    [HideInInspector] public enum States{Patrolling, Following};
     [HideInInspector] public States currentState;
 
     private void Start() 
     {
         enemyDetectionScr = GetComponent<EnemyDetection>();
         enemyFollowScr = GetComponent<EnemyFollow>();
+        patrolScr = GetComponent<PatrolAI>();
+        enemyLeave = GetComponent<EnemyLeave>();
     }
     void Update()
     {
@@ -25,19 +28,16 @@ public class EnemyStateMachine : MonoBehaviour
             //mirar si esta en su campo de vision
             Debug.Log("detectando");
             enemyDetectionScr.OnPlayerDetection();
+            patrolScr.PatrolLogic();
             //patrullar por los puntos que le diga
-            //patrolScr.PatrolLogic();
 
             break;
 
             case States.Following:
             //perseguirle
+            Debug.Log("siguiendo");
             enemyFollowScr.FollowPlayer();
-
-            break;
-
-            case States.Leaving:
-            
+            enemyLeave.PatienceCalculator();
 
             break;
         }
@@ -51,19 +51,12 @@ public class EnemyStateMachine : MonoBehaviour
             //To Following
             case 0:
             currentState = States.Following;
-            enemyFollowScr.enabled = true;
 
-            break;
-
-            //To Leaving
-            case 1:
-
-            
             break;
 
             //To Patrolling
-            case 2:
-
+            case 1:
+            currentState = States.Patrolling;
             
             break;
         }

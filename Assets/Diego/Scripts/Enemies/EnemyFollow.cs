@@ -9,6 +9,11 @@ public class EnemyFollow : MonoBehaviour
 
     [SerializeField] int speed = 3;
     [SerializeField] int attackRange = 3;
+    [SerializeField] float feetRadius = 0.5f;
+
+    [SerializeField] Transform feet;
+    [SerializeField] LayerMask isGround;
+    [SerializeField] bool isGrounded;
 
     Animator anim;
     Rigidbody2D rb;
@@ -26,17 +31,32 @@ public class EnemyFollow : MonoBehaviour
     {
         if (stateMachine.currentState == EnemyStateMachine.States.Following)
         {
+            IsGrounded();
+            Debug.Log(IsGrounded());
             LookAtPlayer();
-
-            Vector3 target = new Vector3(player.position.x, rb.position.y);
-            Vector3 newPos = Vector3.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
-            rb.MovePosition(newPos);
-        
+            if (isGrounded)
+            {
+                Vector3 target = new Vector3(player.position.x, rb.position.y);
+                Vector3 newPos = Vector3.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
+                rb.MovePosition(newPos);
+            }
             if (Vector3.Distance(transform.position, player.position) <= attackRange)
             {
                 anim.SetTrigger("Attack");
             }
         }
+    }
+
+    public bool IsGrounded()
+    {
+        isGrounded = Physics2D.OverlapCircle(feet.position, feetRadius, isGround);
+        
+        return isGrounded;
+    }
+
+    private void OnDrawGizmos() 
+    {
+        Gizmos.DrawWireSphere(feet.position, feetRadius);
     }
 
     public void LookAtPlayer()

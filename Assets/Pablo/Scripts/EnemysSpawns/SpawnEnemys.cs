@@ -8,7 +8,8 @@ public class SpawnEnemys : MonoBehaviour
     public List<Transform> SpawnPoints = new List<Transform>();
 
     private int indexRoomParent;
-
+    private int randEnemysToSpawn;
+    private int randSelectEnemy;
 
     private void Start()
     {
@@ -17,7 +18,7 @@ public class SpawnEnemys : MonoBehaviour
 
     public IEnumerator SystemSpawnEnemy()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1);
 
         if (this.gameObject.transform.parent.name != "RoomOrigen")
         {
@@ -30,6 +31,7 @@ public class SpawnEnemys : MonoBehaviour
             Debug.Log("Spawn enemys in Origen");
         }
 
+        P_GameMangaer.managerInstance.gameReady = true;
     }
 
     public void FindIndexListRoom()
@@ -40,7 +42,6 @@ public class SpawnEnemys : MonoBehaviour
            
             if (parentRoom.name == P_GameMangaer.managerInstance.GeneratedRooms[i].name)
             {
-                Debug.Log("Index: " + P_GameMangaer.managerInstance.GeneratedRooms.IndexOf(parentRoom));
                 indexRoomParent = P_GameMangaer.managerInstance.GeneratedRooms.IndexOf(parentRoom);
             }
 
@@ -56,40 +57,56 @@ public class SpawnEnemys : MonoBehaviour
         {
             case 0:
 
-                Debug.Log("Room Name: " + parentRoom.name + ", Index de la lista: " + indexRoomParent);
+                
+                randEnemysToSpawn = Random.Range((int)P_GameMangaer.managerInstance.enemysMinMaxSpawn.x, (int)P_GameMangaer.managerInstance.enemysMinMaxSpawn.y);
 
-                /*
-                int randEnemysToSpawn = Random.Range((int)P_GameMangaer.managerInstance.enemysMinMaxSpawn.x, (int)P_GameMangaer.managerInstance.enemysMinMaxSpawn.y);
-                int randSelectEnemy = Random.Range(0, 1);
+
                 for (int i = 0; i < randEnemysToSpawn; i++)
-                {
-                    Instantiate(P_GameMangaer.managerInstance.enemysGO[randSelectEnemy], SpawnPoints[Random.Range(0,SpawnPoints.Count)].position, Quaternion.identity);
+                {           
+                    Instantiate(P_GameMangaer.managerInstance.enemysGO[Random.Range(0,2)], SpawnPoints[Random.Range(0,SpawnPoints.Count)].position, Quaternion.identity);
                 }
-                */
+                
 
                 break;
 
             case 1:
 
-                Debug.Log("Room Name: " + parentRoom.name + ", Index de la lista: " + indexRoomParent);
+                randEnemysToSpawn = Random.Range((int)P_GameMangaer.managerInstance.enemysMinMaxSpawn.x, (int)P_GameMangaer.managerInstance.enemysMinMaxSpawn.y);
+
+
+                for (int i = 0; i < randEnemysToSpawn; i++)
+                {
+                    Instantiate(P_GameMangaer.managerInstance.enemysGO[Random.Range(0, 3)], SpawnPoints[Random.Range(0, SpawnPoints.Count)].position, Quaternion.identity);
+                }
+
 
                 break;
 
             case 2:
 
-                Debug.Log("Room Name: " + parentRoom.name + ", Index de la lista: " + indexRoomParent);
+                randEnemysToSpawn = Random.Range((int)P_GameMangaer.managerInstance.enemysMinMaxSpawn.x, (int)P_GameMangaer.managerInstance.enemysMinMaxSpawn.y);
+
+
+                for (int i = 0; i < randEnemysToSpawn; i++)
+                {
+                    Instantiate(P_GameMangaer.managerInstance.enemysGO[Random.Range(1, 4)], SpawnPoints[Random.Range(0, SpawnPoints.Count)].position, Quaternion.identity);
+                }
+
 
                 break;
 
             case 3:
+                
+                randEnemysToSpawn = Random.Range((int)P_GameMangaer.managerInstance.enemysMinMaxSpawn.x, (int)P_GameMangaer.managerInstance.enemysMinMaxSpawn.y);
 
-                Debug.Log("Room Name: " + parentRoom.name + ", Index de la lista: " + indexRoomParent);
 
+                for (int i = 0; i < randEnemysToSpawn; i++)
+                {
+                    Instantiate(P_GameMangaer.managerInstance.enemysGO[Random.Range(2, 4)], SpawnPoints[Random.Range(0, SpawnPoints.Count)].position, Quaternion.identity);
+                }
+                
                 break;
         }
-
-        
-
 
     }
 

@@ -8,6 +8,8 @@ public class P_GameMangaer : MonoBehaviour
 
     [Space(10)]
     public bool worldGenerated;
+    public bool gameReady;
+    public bool endGame;
 
     public List<GameObject> rooms = new List<GameObject>();
     public List<GameObject> GeneratedRooms = new List<GameObject>();

@@ -67,13 +67,13 @@ public class EnemyFollow : MonoBehaviour
         if (transform.position.x > player.position.x && isFlipped)
         {
             transform.localScale = flipped;
-            transform.Rotate(0f, 180f, 0f);
+            transform.rotation = Quaternion.Euler(0f, 180f, 0f);
             isFlipped = false;
         }
         else if(transform.position.x < player.position.x && !isFlipped)
         {
             transform.localScale = flipped;
-            transform.Rotate(0f, 180f, 0f);
+            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             isFlipped = true;
         }
     }

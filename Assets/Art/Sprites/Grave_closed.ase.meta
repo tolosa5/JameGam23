@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64e235be9ff4e2d4a8b9731381c1abf5
+guid: 4c23d62d30ec4ee4883299c72bd859e9
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -118,19 +118,47 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  animatedSpriteImportData: []
+  animatedSpriteImportData:
+  - name: Grave_closed
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 52
+      height: 17
+    spriteID: 83802a301fde26440adeafd2ff6f0eee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -2, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -217885283
-    name: Palette
+    guid: -890354488
+    name: Grave_closed
     layerFlags: 0
     layerType: 0
     blendMode: 0
-    cells: []
+    cells:
+    - name: Grave_closed
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 83802a301fde26440adeafd2ff6f0eee
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 16, y: 2}
+  canvasSize: {x: 64, y: 64}

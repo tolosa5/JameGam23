@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64e235be9ff4e2d4a8b9731381c1abf5
+guid: a18406c08b01880479b4a2270adc7e53
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -118,19 +118,47 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  animatedSpriteImportData: []
+  animatedSpriteImportData:
+  - name: Big_candle_H0_Idle
+    originalName: 
+    pivot: {x: 0.47058824, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 34
+      height: 18
+    spriteID: 2958810e3539fa1468f3de955c2416bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -12, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -217885283
-    name: Palette
+    guid: -2001622156
+    name: Big_candle_H0_Idle
     layerFlags: 0
     layerType: 0
     blendMode: 0
-    cells: []
+    cells:
+    - name: Big_candle_H0_Idle
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 2958810e3539fa1468f3de955c2416bb
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 16, y: 2}
+  canvasSize: {x: 64, y: 64}

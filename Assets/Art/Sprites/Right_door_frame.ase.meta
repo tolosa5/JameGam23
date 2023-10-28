@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64e235be9ff4e2d4a8b9731381c1abf5
+guid: 22bd97e0cd2efc64fa535fb5bf3c5ccb
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -118,19 +118,47 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  animatedSpriteImportData: []
+  animatedSpriteImportData:
+  - name: Right_door_frame
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 32
+      height: 128
+    spriteID: 11e441f4b2000d446beebdeef8114270
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -28, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -217885283
-    name: Palette
+    guid: 999440679
+    name: Right_door_frame
     layerFlags: 0
     layerType: 0
     blendMode: 0
-    cells: []
+    cells:
+    - name: Right_door_frame
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 128
+      spriteId: 11e441f4b2000d446beebdeef8114270
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 16, y: 2}
+  canvasSize: {x: 64, y: 128}

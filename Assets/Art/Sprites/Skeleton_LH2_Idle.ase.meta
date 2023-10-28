@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 23
       height: 62
-    spriteID: 90cf14fee5b349345b71f494a4b9e76a
+    spriteID: c3a4c93244abbb840adfe52b688c4941
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 4
       width: 22
       height: 63
-    spriteID: 6681ec3e36c6fa745a233c96205352b7
+    spriteID: 0a11b3e86c20fcc40b408fd68060264c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -175,7 +175,7 @@ ScriptedImporter:
         y: 0
         width: 65
         height: 70
-      spriteId: 90cf14fee5b349345b71f494a4b9e76a
+      spriteId: c3a4c93244abbb840adfe52b688c4941
     - name: Skeleton_LH2_Idle_Frame_1
       frameIndex: 1
       cellRect:
@@ -183,7 +183,7 @@ ScriptedImporter:
         y: 0
         width: 65
         height: 70
-      spriteId: 6681ec3e36c6fa745a233c96205352b7
+      spriteId: 0a11b3e86c20fcc40b408fd68060264c
     linkedCells: []
     parentIndex: -1
   platformSettings: []

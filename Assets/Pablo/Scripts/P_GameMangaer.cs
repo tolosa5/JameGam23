@@ -14,8 +14,11 @@ public class P_GameMangaer : MonoBehaviour
 
     public Transform posStartGeneration;
 
-    private int rand;
     public int limiteRooms = 4;
+
+    public float offsetModuloY;
+
+    private int rand;
 
     private void Awake()
     {
@@ -29,8 +32,6 @@ public class P_GameMangaer : MonoBehaviour
         DontDestroyOnLoad(managerInstance);
 
         #endregion
-
-        OnStartLevel();
     }
 
 
@@ -65,6 +66,8 @@ public class P_GameMangaer : MonoBehaviour
     //   -----------------------------------------------------------------------
 
 
+    /* SI QUEREMOS GENERAR UNA HABITACION EN EL AWAKE QUE SEA ALEATORIA
+     * 
     public void OnStartLevel()
     {
         Debug.Log("Nivel 1");
@@ -73,4 +76,5 @@ public class P_GameMangaer : MonoBehaviour
         rooms.RemoveAt(rand);
 
     }
+    */
 }

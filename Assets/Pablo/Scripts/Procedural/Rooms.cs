@@ -16,7 +16,7 @@ public class Rooms : MonoBehaviour
     void Start()
     {
 
-        Invoke("Spawn", 0.1f);
+        Invoke("Spawn", 0.01f);
 
     }
 
@@ -31,7 +31,7 @@ public class Rooms : MonoBehaviour
             {
                 Debug.Log("Generamos Habitacion 1");
                 rand = Random.Range(0, P_GameMangaer.managerInstance.rooms.Count);
-                Instantiate(P_GameMangaer.managerInstance.rooms[rand], transform.position, P_GameMangaer.managerInstance.rooms[rand].transform.rotation);
+                Instantiate(P_GameMangaer.managerInstance.rooms[rand], transform.position + new Vector3(0,P_GameMangaer.managerInstance.offsetModuloY,0), P_GameMangaer.managerInstance.rooms[rand].transform.rotation);
                 P_GameMangaer.managerInstance.rooms.RemoveAt(rand);
             }
 

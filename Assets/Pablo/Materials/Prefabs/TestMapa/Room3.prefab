@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2302101030252081266}
   - component: {fileID: 9080865782557338525}
+  - component: {fileID: 523562187862032349}
   m_Layer: 0
   m_Name: Point
   m_TagString: SpawnPoint
@@ -77,6 +78,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &523562187862032349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2454388340610226918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a363e6e8349824f44beb8c708ee0d51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openSide: 1
 --- !u!1 &3283398285305673611
 GameObject:
   m_ObjectHideFlags: 0
@@ -87,7 +101,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2217233211642990310}
   - component: {fileID: 6033326673590604315}
-  - component: {fileID: 2683777989411487277}
   m_Layer: 0
   m_Name: Room3
   m_TagString: Untagged
@@ -124,19 +137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881cbf5e23c6be54da56d2fcf7047825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2683777989411487277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3283398285305673611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363e6e8349824f44beb8c708ee0d51b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openSide: 1
 --- !u!1 &7412278484261465725
 GameObject:
   m_ObjectHideFlags: 0

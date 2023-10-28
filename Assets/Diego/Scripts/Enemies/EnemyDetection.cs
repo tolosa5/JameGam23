@@ -24,8 +24,11 @@ public class EnemyDetection : MonoBehaviour
             if(Physics2D.Raycast(transform.position, transform.right, viewRadius, isPlayer))
             {
                 Debug.Log("visto");
-                EnemyStateMachine enemyStateScr = GetComponent<EnemyStateMachine>();
+                if (TryGetComponent<EnemyStateMachine>(out EnemyStateMachine enemyStateScr))
                 enemyStateScr.SwitchState(0);
+                
+                if (TryGetComponent<RangedState>(out RangedState rangedStateScr))
+                rangedStateScr.SwitchState(0);
             }
         }
         

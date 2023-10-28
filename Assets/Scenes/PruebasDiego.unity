@@ -681,7 +681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1193192618
 Transform:
   m_ObjectHideFlags: 0
@@ -3668,6 +3668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2447607395932890641}
   - component: {fileID: 1220136214190197674}
+  - component: {fileID: 5879332006625972338}
   m_Layer: 0
   m_Name: r
   m_TagString: Untagged
@@ -3675,6 +3676,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5879332006625972338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5879332006625972337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2cf22cf3891f34db0f6ed5b93438c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 4500726642060750029, guid: 22c14e588fa0aba42ba7cf3f650fbf07, type: 3}
+  shootSpot: {fileID: 2447607395932890641}
 --- !u!224 &5930829062495557222
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4214,7 +4229,7 @@ GameObject:
   - component: {fileID: 2621072978602016717}
   - component: {fileID: 6671019892592990519}
   - component: {fileID: 2685886366471270251}
-  - component: {fileID: 7985334309101060137}
+  - component: {fileID: 7985334309101060138}
   - component: {fileID: 1493450005688989869}
   - component: {fileID: 1675339837187441778}
   - component: {fileID: 5037325946838992355}
@@ -4266,7 +4281,7 @@ Transform:
   - {fileID: 8822097948222669017}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &7985334309101060137
+--- !u!114 &7985334309101060138
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4275,11 +4290,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7846670446165336883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e2cf22cf3891f34db0f6ed5b93438c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e5ec8055c09c0b4ba28ed242fd037e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 4500726642060750029, guid: 22c14e588fa0aba42ba7cf3f650fbf07, type: 3}
-  shootSpot: {fileID: 2447607395932890641}
+  currentState: 0
 --- !u!222 &8074732840376396071
 CanvasRenderer:
   m_ObjectHideFlags: 0

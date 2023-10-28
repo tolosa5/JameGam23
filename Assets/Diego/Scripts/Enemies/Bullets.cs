@@ -11,11 +11,14 @@ public class Bullets : MonoBehaviour
     private void Start() 
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        aimedPoint = transform.position - player.position;
+        //aimedPoint = new Vector3(transform.position.x, -transform.position.y) - new Vector3(player.position.x, -player.position.y);
+        aimedPoint = player.transform.position - transform.position;
+
+        Destroy(gameObject, 2);
     }
 
     void Update()
     {
-        transform.Translate(aimedPoint * (speed * Time.deltaTime));
+        transform.Translate(aimedPoint.normalized * (speed * Time.deltaTime));
     }
 }

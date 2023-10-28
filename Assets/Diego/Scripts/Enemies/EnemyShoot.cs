@@ -8,20 +8,12 @@ public class EnemyShoot : MonoBehaviour
     [SerializeField] Transform shootSpot;
     bool activated;
 
-    private void Update() 
-    {
-        if (!activated)
-        {
-            StartCoroutine(Shoot());
-        }
-    }
-
     public IEnumerator Shoot()
     {
-        activated = true;
         while (true)
         {
-            Instantiate(bullet, shootSpot);
+            Debug.Log("disparando");
+            Instantiate(bullet, transform.position, Quaternion.identity);
             yield return new WaitForSeconds(1f);
         }
     }

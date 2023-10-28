@@ -5,7 +5,7 @@ using UnityEngine;
 public class RangedState : MonoBehaviour
 {
     EnemyDetection enemyDetectionScr;
-    //EnemyFollow enemyFollowScr;
+    EnemyFollow enemyFollowScr;
     //PatrolAI patrolScr;
     EnemyShoot enemyShoot;
     EnemyLeave enemyLeave;
@@ -13,13 +13,15 @@ public class RangedState : MonoBehaviour
     [HideInInspector] public enum States{Patrolling, Following};
     [HideInInspector] public States currentState;
 
+    bool shooting;
+
     private void Start() 
     {
         enemyDetectionScr = GetComponent<EnemyDetection>();
-        //enemyFollowScr = GetComponent<EnemyFollow>();
+        enemyFollowScr = GetComponent<EnemyFollow>();
         //patrolScr = GetComponent<PatrolAI>();
         enemyLeave = GetComponent<EnemyLeave>();
-        enemyShoot = GetComponent<EnemyShoot>();
+        enemyShoot = GetComponentInChildren<EnemyShoot>();
     }
     void Update()
     {
@@ -38,7 +40,12 @@ public class RangedState : MonoBehaviour
             //perseguirle
             Debug.Log("siguiendo");
             //enemyFollowScr.FollowPlayer();
-            StartCoroutine(enemyShoot.Shoot());
+            if (!shooting)
+            {
+                shooting = true;
+                StartCoroutine(enemyShoot.Shoot());
+            }
+            enemyFollowScr.LookAtPlayer();
             enemyLeave.PatienceCalculator();
 
             break;
@@ -52,6 +59,7 @@ public class RangedState : MonoBehaviour
             default:
             //To Following
             case 0:
+            Debug.Log("a seguirle");
             currentState = States.Following;
 
             break;

@@ -1,9 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Grapple : MonoBehaviour
 {
+
     public Camera cam;
     public LineRenderer lr;
     public LayerMask grappleMask;
@@ -12,19 +12,26 @@ public class Grapple : MonoBehaviour
     [Min(1)]
     public int maxPoints = 3;
 
-    private Rigidbody2D rig;
+    private bool canHook = true;
+
+    private Rigidbody2D rb;
     private List<Vector2> points = new List<Vector2>();
     private bool isGrappling = false; // Variable para controlar si el gancho está activo
 
     private void Start()
     {
-        rig = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         lr.positionCount = 0;
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !isGrappling) // Verifica si no se está agarrando
+       
+    }
+
+    public void Hook()
+    {
+        if (Input.GetMouseButtonDown(0) && !isGrappling && canHook) // Verifica si no se está agarrando
         {
             isGrappling = true; // Establece que el gancho está activo
 
@@ -46,10 +53,11 @@ public class Grapple : MonoBehaviour
 
         if (isGrappling)
         {
+
             if (points.Count > 0)
             {
                 Vector2 moveTo = centriod(points.ToArray());
-                rig.MovePosition(Vector2.MoveTowards((Vector2)transform.position, moveTo, Time.deltaTime * moveSpeed));
+                rb.MovePosition(Vector2.MoveTowards((Vector2)transform.position, moveTo, Time.deltaTime * moveSpeed));
 
                 lr.positionCount = 0;
                 lr.positionCount = points.Count * 2;
@@ -69,8 +77,9 @@ public class Grapple : MonoBehaviour
 
         if (isGrappling) // Si el gancho está activo, continúa el comportamiento
         {
+            rb.gravityScale = 0;
             Vector2 moveTo = centriod(points.ToArray());
-            rig.MovePosition(Vector2.MoveTowards((Vector2)transform.position, moveTo, Time.deltaTime * moveSpeed));
+            rb.MovePosition(Vector2.MoveTowards((Vector2)transform.position, moveTo, Time.deltaTime * moveSpeed));
 
             lr.positionCount = 0;
             lr.positionCount = points.Count * 2;
@@ -90,6 +99,7 @@ public class Grapple : MonoBehaviour
     public void Detatch()
     {
         isGrappling = false; // Desactiva el gancho
+        rb.gravityScale = 9.73f;
         lr.positionCount = 0;
         points.Clear();
     }

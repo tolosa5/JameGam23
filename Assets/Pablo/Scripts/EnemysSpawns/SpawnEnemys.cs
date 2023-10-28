@@ -20,7 +20,7 @@ public class SpawnEnemys : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
 
-        if (this.gameObject.transform.parent.name != "RoomOrigen")
+        if (this.gameObject.transform.parent.name != "Inicio")
         {
             FindIndexListRoom();
             Debug.Log("Spawn in other rooms");
@@ -105,6 +105,18 @@ public class SpawnEnemys : MonoBehaviour
                     Instantiate(P_GameMangaer.managerInstance.enemysGO[Random.Range(2, 4)], SpawnPoints[Random.Range(0, SpawnPoints.Count)].position, Quaternion.identity);
                 }
                 
+                break;
+
+            case 4:
+
+                randEnemysToSpawn = Random.Range((int)P_GameMangaer.managerInstance.enemysMinMaxSpawn.x, (int)P_GameMangaer.managerInstance.enemysMinMaxSpawn.y);
+
+
+                for (int i = 0; i < randEnemysToSpawn; i++)
+                {
+                    Instantiate(P_GameMangaer.managerInstance.enemysGO[Random.Range(2, 4)], SpawnPoints[Random.Range(0, SpawnPoints.Count)].position, Quaternion.identity);
+                }
+
                 break;
         }
 

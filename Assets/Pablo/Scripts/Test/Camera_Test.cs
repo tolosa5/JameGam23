@@ -7,6 +7,6 @@ public class Camera_Test : MonoBehaviour
 
     private void Update()
     {
-        transform.position = new Vector3(playerTarget.position.x, 0, -10);
+        transform.position = new Vector3(playerTarget.position.x, playerTarget.position.y, -10);
     }
 }

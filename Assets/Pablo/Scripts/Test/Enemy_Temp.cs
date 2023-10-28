@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy_Temp : MonoBehaviour
 {
-
+    public GameObject goWalls;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,6 +14,15 @@ public class Enemy_Temp : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        TestEndGame();
+    }
 
+    public void TestEndGame()
+    {
+        P_GameMangaer.managerInstance.endGame = true;
+        goWalls.SetActive(false);
+    }
 
 }

@@ -12,7 +12,8 @@ public class Player_Mov_Test : MonoBehaviour
     private void Update()
     {
         h = Input.GetAxisRaw("Horizontal");
+        v = Input.GetAxisRaw("Vertical");
 
-        transform.Translate(new Vector3(h * speedMov * Time.deltaTime,0,0));
+        transform.Translate(new Vector3(h,v,0).normalized * speedMov * Time.deltaTime);
     }
 }

@@ -512,9 +512,15 @@ MonoBehaviour:
   - {fileID: 943747598138038221, guid: fead05a5e5ae794438f0bb457ecc3e21, type: 3}
   - {fileID: 8795017931425543377, guid: 5d0087407a922754b8b306a7a11188de, type: 3}
   GeneratedRooms: []
+  enemysGO:
+  - {fileID: 6502403363231215980, guid: ab10cfef9841107479fe18da36be78bb, type: 3}
+  - {fileID: 4033805354454355555, guid: 5aeb3d96aae24544aa337acac92cba28, type: 3}
+  - {fileID: 4840442258723011604, guid: 6099a8532a30e3f49acda083a73c62e9, type: 3}
+  - {fileID: 655737661630270212, guid: 98c05242cfcd3674ca4a728120d88dd3, type: 3}
   posStartGeneration: {fileID: 1641660279}
   limiteRooms: 2
   offsetModuloY: 5
+  enemysMinMaxSpawn: {x: 1, y: 5}
 --- !u!114 &933266899975326075
 MonoBehaviour:
   m_ObjectHideFlags: 0

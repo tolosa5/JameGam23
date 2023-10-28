@@ -12,6 +12,8 @@ public class P_GameMangaer : MonoBehaviour
     public List<GameObject> rooms = new List<GameObject>();
     public List<GameObject> GeneratedRooms = new List<GameObject>();
 
+    //public List<Transform> EnemysSpawns = new List<Transform>();  //------------------> New System Find Spawn Enemy Points <-----------------------
+
     public Transform posStartGeneration;
 
     public int limiteRooms = 4;

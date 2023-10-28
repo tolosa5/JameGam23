@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Rooms : MonoBehaviour
@@ -29,10 +30,12 @@ public class Rooms : MonoBehaviour
 
             if (openSide == 1)
             {
-                Debug.Log("Generamos Habitacion 1");
+
+                Debug.Log("Generamos Habitacion, Total de habitaciones generadas: " + (P_GameMangaer.managerInstance.GeneratedRooms.Count + 1));
                 rand = Random.Range(0, P_GameMangaer.managerInstance.rooms.Count);
                 Instantiate(P_GameMangaer.managerInstance.rooms[rand], transform.position + new Vector3(0,P_GameMangaer.managerInstance.offsetModuloY,0), P_GameMangaer.managerInstance.rooms[rand].transform.rotation);
                 P_GameMangaer.managerInstance.rooms.RemoveAt(rand);
+
             }
 
             if (P_GameMangaer.managerInstance.GeneratedRooms.Count == P_GameMangaer.managerInstance.limiteRooms)
@@ -42,7 +45,6 @@ public class Rooms : MonoBehaviour
 
                 Debug.Log("End of Generate World");
 
-
             }
 
             spawned = true;
@@ -50,6 +52,5 @@ public class Rooms : MonoBehaviour
         }
 
     }
-
 
 }

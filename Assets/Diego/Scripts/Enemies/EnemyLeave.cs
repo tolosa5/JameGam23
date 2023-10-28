@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyLeave : MonoBehaviour
 {
-    [SerializeField] float maxPatience = 4f;
+    [SerializeField] float maxPatience = 2.5f;
     [SerializeField] float maxDistance = 10f;
 
     float timer;
@@ -22,13 +22,20 @@ public class EnemyLeave : MonoBehaviour
     public void PatienceCalculator()
     {
         if (Vector3.Distance(transform.position, player.position) > maxDistance)
-        timer -= Time.deltaTime;
+        {
+            timer -= Time.deltaTime;
+            Debug.Log("contando");
+        }
         else
-        timer = maxPatience;
+        {
+            timer = maxPatience;
+            Debug.Log("reseteando");
+        }
 
         if (timer <= 0)
         {
             timer = maxPatience;
+            Debug.Log("cambio");
             stateMachine.SwitchState(1);
         }
     }

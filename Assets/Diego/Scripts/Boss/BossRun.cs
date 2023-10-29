@@ -13,7 +13,6 @@ public class BossRun : StateMachineBehaviour
 
     Transform feet;
     Transform player;
-    Animator anim;
     Rigidbody2D rb;
     Boss boss;
 
@@ -22,7 +21,6 @@ public class BossRun : StateMachineBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = animator.GetComponent<Rigidbody2D>();
         boss = animator.GetComponent<Boss>();
-        anim = animator;
         feet = animator.transform.GetChild(0);
     }
 

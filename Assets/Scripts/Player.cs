@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
 
     
     private List<Vector2> points = new List<Vector2>();
-    private bool isGrappling = false; // Variable para controlar si el gancho está activo
+    private bool isGrappling = false; // Variable para controlar si el gancho estï¿½ activo
 
     private void Awake()
     {
@@ -116,10 +116,10 @@ public class Player : MonoBehaviour
 
     public void Hook()
     {
-        if (Input.GetMouseButtonDown(0) && !isGrappling && canHook) // Verifica si no se está agarrando
+        if (Input.GetMouseButtonDown(0) && !isGrappling && canHook) // Verifica si no se estï¿½ agarrando
         {
             
-            isGrappling = true; // Establece que el gancho está activo
+            isGrappling = true; // Establece que el gancho estï¿½ activo
 
             Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
             Vector2 direction = (mousePos - (Vector2)transform.position).normalized;
@@ -155,13 +155,13 @@ public class Player : MonoBehaviour
             }
             else
             {
-                // Si no hay puntos válidos, desactiva el gancho
+                // Si no hay puntos vï¿½lidos, desactiva el gancho
                 Detatch();
             }
         }
 
 
-        if (isGrappling) // Si el gancho está activo, continúa el comportamiento
+        if (isGrappling) // Si el gancho estï¿½ activo, continï¿½a el comportamiento
         {
             canHook = false;
             rb.gravityScale = 0;
@@ -216,14 +216,7 @@ public class Player : MonoBehaviour
             Gizmos.DrawLine(transform.position, point);
         }
     }
-
-
-
-
-
-
-
-
+    
     void Movement()
     {
         h = Input.GetAxisRaw("Horizontal");
@@ -253,8 +246,6 @@ public class Player : MonoBehaviour
     #region Jump
     bool IsGrounded()
     {
-        
-        
         isGrounded = Physics2D.OverlapCircle(playerFeet.position, feetRadius, isGround);
         return isGrounded;
     }

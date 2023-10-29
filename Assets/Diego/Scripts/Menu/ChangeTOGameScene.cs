@@ -13,6 +13,11 @@ public class ChangeTOGameScene : MonoBehaviour
         MSceneLoad.LoadScene("TestMapa");
     }
 
+    public void ControlAnim()
+    {
+
+    }
+
     public void OptionsPanel()
     {
         panelPrincipal.SetActive(false);

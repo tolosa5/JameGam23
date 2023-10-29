@@ -12,16 +12,12 @@ public class GameManager : MonoBehaviour
 
     [Header("Tutorial")]
     public GameObject tutorialPanel;
-    [SerializeField] GameObject[] txtsTutorialPlayer;
-    [SerializeField] GameObject[] txtsTutorialHook;
-
-    [SerializeField] TextMeshProUGUI scoreTxt;
+    [SerializeField] GameObject txtsTutorialMov;
+    [SerializeField] GameObject txtsTutorialHook;
 
     [SerializeField] GameObject deathPanel, winPanel;
 
     [Header("WinPanel")]
-    [SerializeField] TextMeshProUGUI finalScoreText;
-
     [SerializeField] AudioClip[] sfx;
     AudioSource aS;
 
@@ -51,7 +47,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        playerStartPosition = Player.instance.transform.position;
+        //playerStartPosition = Player.instance.transform.position;
     }
 
     private void OnEnable()
@@ -74,12 +70,11 @@ public class GameManager : MonoBehaviour
         deathPanel.SetActive(false);
         winPanel.SetActive(false);
 
-        Player.instance.gameObject.transform.position = new Vector3(8.54f, 6.01f);
+        //Player.instance.gameObject.transform.position = new Vector3(8.54f, 6.01f);
 
         if (scene.buildIndex == 0)
         {
             Player.instance.gameObject.SetActive(false);
-            scoreTxt.gameObject.SetActive(false);
             score = 0;
         }
         else
@@ -119,14 +114,14 @@ public class GameManager : MonoBehaviour
     IEnumerator TutorialManager()
     {
         tutorialPanel.SetActive(true);
-        yield return null;//new WaitForSeconds(0.1f);
+        yield return null;
         StartCoroutine(TutorialPlayer());
     }
 
     IEnumerator TutorialPlayer()
     {
         Debug.Log("Dentro player");
-        StartCoroutine(Pauses(txtsTutorialPlayer));
+        StartCoroutine(Pauses(txtsTutorialMov));
         yield return new WaitForSeconds(0.5f); //
         yield return new WaitUntil(() => Time.timeScale == 1);
 
@@ -144,21 +139,18 @@ public class GameManager : MonoBehaviour
         tutorialAcabado = true;
     }
 
-    IEnumerator Pauses(GameObject[] auxs)
+    IEnumerator Pauses(GameObject aux)
     {
 
         Debug.Log("dentro pauses");
         Time.timeScale = 0;
+
         yield return new WaitForSecondsRealtime(0.5f); //espera tiempo
-        auxs[0].SetActive(true);
+        aux.SetActive(true);
         yield return new WaitForSecondsRealtime(3f); //tiempo de texto
-        auxs[0].SetActive(false);
+        aux.SetActive(false);
         yield return new WaitForSecondsRealtime(0.5f); //despues de tiempo
 
-        auxs[1].SetActive(true);
-        yield return new WaitForSecondsRealtime(3f); //tiempo de texto
-        auxs[1].SetActive(false);
-        yield return new WaitForSecondsRealtime(0.5f); //despues de tiempo
         Time.timeScale = 1;
         Debug.Log("fuera pauses");
     }
@@ -200,12 +192,5 @@ public class GameManager : MonoBehaviour
         //toda l apesca de ganar y tal
         winPanel.SetActive(true);
         Time.timeScale = 0f;
-        WinPanel();
-    }
-
-    public void WinPanel()
-    {
-        finalScore = score += (coins * 5000);
-        finalScoreText.text = "Your final score: " + finalScore.ToString();
     }
 }

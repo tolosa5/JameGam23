@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 54557ce525000b1468a2be0fc4eee48a
+guid: 0e35f189fbea1864bae4883cff6d1a68
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +119,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Grave_golem_Intro
+  - name: Grave_golem_Intro_continuation_Frame_3
     originalName: 
     pivot: {x: 0.475, y: 0}
     alignment: 9
@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 160
       height: 105
-    spriteID: 9cffb569811ddc744a0034938b5b7b1f
+    spriteID: 3fa8b5798c42c944cb19f890844c2217
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,7 +139,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 806, y: 4}
-  - name: Grave_golem_Intro_Frame_4
+  - name: Grave_golem_Intro_continuation_Frame_4
     originalName: 
     pivot: {x: 0.5102041, y: 0}
     alignment: 9
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 450
       width: 147
       height: 107
-    spriteID: d752a042e48cd7f43a939ee0968b778d
+    spriteID: ed729cfff0b39ef4098e51ebd6547ab8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,7 +159,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 372, y: 450}
-  - name: Grave_golem_Intro_Frame_5
+  - name: Grave_golem_Intro_continuation_Frame_5
     originalName: 
     pivot: {x: 0.48000002, y: 0.017094018}
     alignment: 9
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 316
       width: 150
       height: 117
-    spriteID: 05642d8616c61da449cd4ed54bf5345e
+    spriteID: 6b01fbca9e8ea454cb99a983a1b4d789
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -179,7 +179,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 782, y: 316}
-  - name: Grave_golem_Intro_Frame_6
+  - name: Grave_golem_Intro_continuation_Frame_6
     originalName: 
     pivot: {x: 0.4950495, y: 0.018518519}
     alignment: 9
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 450
       width: 202
       height: 108
-    spriteID: 9deb62cd09ef99845a8a18edce92a8e9
+    spriteID: 0e2969b6579116e41a5af8d8c6b6beca
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -199,7 +199,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 187, y: 450}
-  - name: Grave_golem_Intro_Frame_7
+  - name: Grave_golem_Intro_continuation_Frame_7
     originalName: 
     pivot: {x: 0.5221675, y: 0.02631579}
     alignment: 9
@@ -210,7 +210,7 @@ ScriptedImporter:
       y: 450
       width: 203
       height: 114
-    spriteID: 6dcb0c2a0b15c0b43a1d90140f37febf
+    spriteID: 1a4c2e452a4617340bad93b775fe5aeb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -219,7 +219,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: -18, y: 450}
-  - name: Grave_golem_Intro_Frame_8
+  - name: Grave_golem_Intro_continuation_Frame_8
     originalName: 
     pivot: {x: 0.48430496, y: 0.017094018}
     alignment: 9
@@ -230,7 +230,7 @@ ScriptedImporter:
       y: 181
       width: 223
       height: 117
-    spriteID: 5a1e1dd17ae89694b9eb74e01cd0bb73
+    spriteID: 72537a68dbe650041ae5a4eeca01358d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -239,7 +239,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 640, y: 181}
-  - name: Grave_golem_Intro_Frame_9
+  - name: Grave_golem_Intro_continuation_Frame_9
     originalName: 
     pivot: {x: 0.47938144, y: 0.3372781}
     alignment: 9
@@ -250,7 +250,7 @@ ScriptedImporter:
       y: 4
       width: 194
       height: 169
-    spriteID: af74180043852cc4daf77f49a054e718
+    spriteID: c3e2efc8f411b7c43919eae776592cdc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -259,7 +259,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: -40, y: -12}
-  - name: Grave_golem_Intro_Frame_10
+  - name: Grave_golem_Intro_continuation_Frame_10
     originalName: 
     pivot: {x: 0.5153061, y: 0.2948718}
     alignment: 9
@@ -270,7 +270,7 @@ ScriptedImporter:
       y: 4
       width: 196
       height: 156
-    spriteID: 54b70d9263d7d3047837cd7fab5fcd07
+    spriteID: 41aeb8ae289a4c84eb22f98825dd9632
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -279,7 +279,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 167, y: -12}
-  - name: Grave_golem_Intro_Frame_11
+  - name: Grave_golem_Intro_continuation_Frame_11
     originalName: 
     pivot: {x: 0.5215311, y: 0.31506848}
     alignment: 9
@@ -290,7 +290,7 @@ ScriptedImporter:
       y: 4
       width: 209
       height: 146
-    spriteID: c6ec9755e8886824fbd1d571f96b1771
+    spriteID: 534ddf99568ef564b88a35a3acfb123f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -299,7 +299,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 385, y: -22}
-  - name: Grave_golem_Intro_Frame_12
+  - name: Grave_golem_Intro_continuation_Frame_12
     originalName: 
     pivot: {x: 0.5067265, y: -0.007874016}
     alignment: 9
@@ -310,7 +310,7 @@ ScriptedImporter:
       y: 4
       width: 223
       height: 127
-    spriteID: b4d8f68de58d4eb40b386cd7215b0389
+    spriteID: 1573c9dc05d508b489c2cfb262374d79
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -319,7 +319,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 605, y: -12}
-  - name: Grave_golem_Intro_Frame_13
+  - name: Grave_golem_Intro_continuation_Frame_13
     originalName: 
     pivot: {x: 0.49056605, y: -0.007874016}
     alignment: 9
@@ -330,7 +330,7 @@ ScriptedImporter:
       y: 181
       width: 212
       height: 127
-    spriteID: f7ede03ca0ae8714aa1cb0ee9d9d2fd4
+    spriteID: e595bbeb02f1b10478e9f8d95df6334a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -339,7 +339,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: -27, y: 165}
-  - name: Grave_golem_Intro_Frame_14
+  - name: Grave_golem_Intro_continuation_Frame_14
     originalName: 
     pivot: {x: 0.5167464, y: -0.007936508}
     alignment: 9
@@ -350,7 +350,7 @@ ScriptedImporter:
       y: 181
       width: 209
       height: 126
-    spriteID: d9445151cbc40b944b56623812985e16
+    spriteID: 62d84360d4df2c24a82ca544878bae2d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -359,7 +359,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 415, y: 163}
-  - name: Grave_golem_Intro_Frame_15
+  - name: Grave_golem_Intro_continuation_Frame_15
     originalName: 
     pivot: {x: 0.54502374, y: -0.007936508}
     alignment: 9
@@ -370,7 +370,7 @@ ScriptedImporter:
       y: 181
       width: 211
       height: 126
-    spriteID: 83af0ab6e08574245baad1b431da50bf
+    spriteID: 7031c7b4a0520384897b7fbd4ceb561e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -379,7 +379,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 203, y: 163}
-  - name: Grave_golem_Intro_Frame_16
+  - name: Grave_golem_Intro_continuation_Frame_16
     originalName: 
     pivot: {x: 0.5291262, y: -0.008064516}
     alignment: 9
@@ -390,7 +390,7 @@ ScriptedImporter:
       y: 316
       width: 206
       height: 124
-    spriteID: c75640aeb9877e848935d86668a0a998
+    spriteID: a0d5909a5b79b5a46afead2e8a698106
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -399,7 +399,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 193, y: 303}
-  - name: Grave_golem_Intro_Frame_17
+  - name: Grave_golem_Intro_continuation_Frame_17
     originalName: 
     pivot: {x: 0.59313726, y: 0}
     alignment: 9
@@ -410,7 +410,7 @@ ScriptedImporter:
       y: 316
       width: 204
       height: 125
-    spriteID: 8de598e9453531b4fa497adf56edfe4d
+    spriteID: 09dea8a7adf953b4d84a7191615ac730
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -419,7 +419,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 415, y: 299}
-  - name: Grave_golem_Intro_Frame_18
+  - name: Grave_golem_Intro_continuation_Frame_18
     originalName: 
     pivot: {x: 0.5873786, y: -0.007936508}
     alignment: 9
@@ -430,7 +430,7 @@ ScriptedImporter:
       y: 316
       width: 206
       height: 126
-    spriteID: 364af95b9612bc54084c5cf66fd399ff
+    spriteID: 1259ce4e638c5a34dacadf8ed2d9b2a4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -439,7 +439,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: -11, y: 298}
-  - name: Grave_golem_Intro_Frame_19
+  - name: Grave_golem_Intro_continuation_Frame_19
     originalName: 
     pivot: {x: 0.5645161, y: -0.007936508}
     alignment: 9
@@ -450,7 +450,7 @@ ScriptedImporter:
       y: 316
       width: 186
       height: 126
-    spriteID: ea4e3451fa911da4e8865aedfc440c6e
+    spriteID: c05e12662eed4fb4a953db4a6bc9fc90
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -459,7 +459,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 613, y: 298}
-  - name: Grave_golem_Intro_Frame_0
+  - name: Grave_golem_Intro_continuation_Frame_0
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -470,7 +470,7 @@ ScriptedImporter:
       y: 450
       width: 124
       height: 105
-    spriteID: 04666ef27bb85524a8fb4261ecbbe256
+    spriteID: 6bbf31460c6c8c34e8f331fa253243c0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -479,7 +479,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 710, y: 450}
-  - name: Grave_golem_Intro_Frame_1
+  - name: Grave_golem_Intro_continuation_Frame_1
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -490,7 +490,7 @@ ScriptedImporter:
       y: 450
       width: 124
       height: 107
-    spriteID: b07a2970f508c714bbf15eebc5573421
+    spriteID: f3b6cd3af8382c94ea85a72b59a404ab
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -499,7 +499,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 578, y: 450}
-  - name: Grave_golem_Intro_Frame_2
+  - name: Grave_golem_Intro_continuation_Frame_2
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -510,7 +510,7 @@ ScriptedImporter:
       y: 181
       width: 124
       height: 115
-    spriteID: f3bee3349a1beaa47b16c86786d067a9
+    spriteID: 257eb87ef84d1894095ae4a80768f8fe
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -522,172 +522,172 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1781566527
-    name: Grave_golem_Intro
+    guid: 1153252147
+    name: Grave_golem_Intro_continuation
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Grave_golem_Intro_Frame_3
+    - name: Grave_golem_Intro_continuation_Frame_3
       frameIndex: 3
       cellRect:
         x: 0
         y: 0
         width: 256
         height: 128
-      spriteId: 9cffb569811ddc744a0034938b5b7b1f
-    - name: Grave_golem_Intro_Frame_4
+      spriteId: 3fa8b5798c42c944cb19f890844c2217
+    - name: Grave_golem_Intro_continuation_Frame_4
       frameIndex: 4
       cellRect:
         x: 0
         y: 0
         width: 256
         height: 128
-      spriteId: d752a042e48cd7f43a939ee0968b778d
-    - name: Grave_golem_Intro_Frame_5
+      spriteId: ed729cfff0b39ef4098e51ebd6547ab8
+    - name: Grave_golem_Intro_continuation_Frame_5
       frameIndex: 5
       cellRect:
         x: 0
         y: -2
         width: 256
         height: 130
-      spriteId: 05642d8616c61da449cd4ed54bf5345e
-    - name: Grave_golem_Intro_Frame_6
+      spriteId: 6b01fbca9e8ea454cb99a983a1b4d789
+    - name: Grave_golem_Intro_continuation_Frame_6
       frameIndex: 6
       cellRect:
         x: 0
         y: -2
         width: 256
         height: 130
-      spriteId: 9deb62cd09ef99845a8a18edce92a8e9
-    - name: Grave_golem_Intro_Frame_7
+      spriteId: 0e2969b6579116e41a5af8d8c6b6beca
+    - name: Grave_golem_Intro_continuation_Frame_7
       frameIndex: 7
       cellRect:
         x: 0
         y: -3
         width: 256
         height: 131
-      spriteId: 6dcb0c2a0b15c0b43a1d90140f37febf
-    - name: Grave_golem_Intro_Frame_8
+      spriteId: 1a4c2e452a4617340bad93b775fe5aeb
+    - name: Grave_golem_Intro_continuation_Frame_8
       frameIndex: 8
       cellRect:
         x: 0
         y: -2
         width: 256
         height: 130
-      spriteId: 5a1e1dd17ae89694b9eb74e01cd0bb73
-    - name: Grave_golem_Intro_Frame_9
+      spriteId: 72537a68dbe650041ae5a4eeca01358d
+    - name: Grave_golem_Intro_continuation_Frame_9
       frameIndex: 9
       cellRect:
         x: -9
         y: -73
         width: 337
         height: 201
-      spriteId: af74180043852cc4daf77f49a054e718
-    - name: Grave_golem_Intro_Frame_10
+      spriteId: c3e2efc8f411b7c43919eae776592cdc
+    - name: Grave_golem_Intro_continuation_Frame_10
       frameIndex: 10
       cellRect:
         x: -12
         y: -62
         width: 337
         height: 190
-      spriteId: 54b70d9263d7d3047837cd7fab5fcd07
-    - name: Grave_golem_Intro_Frame_11
+      spriteId: 41aeb8ae289a4c84eb22f98825dd9632
+    - name: Grave_golem_Intro_continuation_Frame_11
       frameIndex: 11
       cellRect:
         x: -6
         y: -72
         width: 437
         height: 200
-      spriteId: c6ec9755e8886824fbd1d571f96b1771
-    - name: Grave_golem_Intro_Frame_12
+      spriteId: 534ddf99568ef564b88a35a3acfb123f
+    - name: Grave_golem_Intro_continuation_Frame_12
       frameIndex: 12
       cellRect:
         x: -7
         y: -15
         width: 337
         height: 165
-      spriteId: b4d8f68de58d4eb40b386cd7215b0389
-    - name: Grave_golem_Intro_Frame_13
+      spriteId: 1573c9dc05d508b489c2cfb262374d79
+    - name: Grave_golem_Intro_continuation_Frame_13
       frameIndex: 13
       cellRect:
         x: -7
         y: -15
         width: 337
         height: 165
-      spriteId: f7ede03ca0ae8714aa1cb0ee9d9d2fd4
-    - name: Grave_golem_Intro_Frame_14
+      spriteId: e595bbeb02f1b10478e9f8d95df6334a
+    - name: Grave_golem_Intro_continuation_Frame_14
       frameIndex: 14
       cellRect:
         x: -8
         y: -17
         width: 338
         height: 166
-      spriteId: d9445151cbc40b944b56623812985e16
-    - name: Grave_golem_Intro_Frame_15
+      spriteId: 62d84360d4df2c24a82ca544878bae2d
+    - name: Grave_golem_Intro_continuation_Frame_15
       frameIndex: 15
       cellRect:
         x: -8
         y: -17
         width: 338
         height: 166
-      spriteId: 83af0ab6e08574245baad1b431da50bf
-    - name: Grave_golem_Intro_Frame_16
+      spriteId: 7031c7b4a0520384897b7fbd4ceb561e
+    - name: Grave_golem_Intro_continuation_Frame_16
       frameIndex: 16
       cellRect:
         x: -6
         y: -12
         width: 427
         height: 160
-      spriteId: c75640aeb9877e848935d86668a0a998
-    - name: Grave_golem_Intro_Frame_17
+      spriteId: a0d5909a5b79b5a46afead2e8a698106
+    - name: Grave_golem_Intro_continuation_Frame_17
       frameIndex: 17
       cellRect:
         x: -10
         y: -17
         width: 340
         height: 164
-      spriteId: 8de598e9453531b4fa497adf56edfe4d
-    - name: Grave_golem_Intro_Frame_18
+      spriteId: 09dea8a7adf953b4d84a7191615ac730
+    - name: Grave_golem_Intro_continuation_Frame_18
       frameIndex: 18
       cellRect:
         x: -8
         y: -17
         width: 338
         height: 166
-      spriteId: 364af95b9612bc54084c5cf66fd399ff
-    - name: Grave_golem_Intro_Frame_19
+      spriteId: 1259ce4e638c5a34dacadf8ed2d9b2a4
+    - name: Grave_golem_Intro_continuation_Frame_19
       frameIndex: 19
       cellRect:
         x: -8
         y: -17
         width: 338
         height: 166
-      spriteId: ea4e3451fa911da4e8865aedfc440c6e
-    - name: Grave_golem_Intro_Frame_0
+      spriteId: c05e12662eed4fb4a953db4a6bc9fc90
+    - name: Grave_golem_Intro_continuation_Frame_0
       frameIndex: 0
       cellRect:
         x: 64
         y: 0
         width: 128
         height: 128
-      spriteId: 04666ef27bb85524a8fb4261ecbbe256
-    - name: Grave_golem_Intro_Frame_1
+      spriteId: 6bbf31460c6c8c34e8f331fa253243c0
+    - name: Grave_golem_Intro_continuation_Frame_1
       frameIndex: 1
       cellRect:
         x: 64
         y: 0
         width: 128
         height: 128
-      spriteId: b07a2970f508c714bbf15eebc5573421
-    - name: Grave_golem_Intro_Frame_2
+      spriteId: f3b6cd3af8382c94ea85a72b59a404ab
+    - name: Grave_golem_Intro_continuation_Frame_2
       frameIndex: 2
       cellRect:
         x: 64
         y: 0
         width: 128
         height: 128
-      spriteId: f3bee3349a1beaa47b16c86786d067a9
+      spriteId: 257eb87ef84d1894095ae4a80768f8fe
     linkedCells: []
     parentIndex: -1
   platformSettings: []

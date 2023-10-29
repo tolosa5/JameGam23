@@ -8,4 +8,12 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: PlayerTwoHit
   m_Controller: {fileID: 9100000, guid: de7a41986cf2cf84a94d263141f18737, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 4c85fe4667f9e074fac19ed19b4523e2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d865da6128526374ba23e2006750d9ce, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c22ad728d60959949a83d51602a7d34c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: dfa5997a7e6b43644a55e17d7954f317, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c0ef210973e49ee4d86ffcb25ae29174, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: dfc3de750b2050e46b7392cf45484ae9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fc686f81635f30248adbf175f721b7d0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a09a5c73ff5c4db4f9059549114be324, type: 2}

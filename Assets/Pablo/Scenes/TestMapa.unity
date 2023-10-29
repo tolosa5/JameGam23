@@ -2226,7 +2226,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   jumpForce: 25.6
-  feetRadius: 0.5
+  feetRadius: 0.2
   coyoteTime: 0.2
   bufferTime: 0.2
   restrictionTime: 0.4

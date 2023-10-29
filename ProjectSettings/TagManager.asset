@@ -8,6 +8,8 @@ TagManager:
   - ObjetoColision
   - BossJump
   - Boss
+  - Death
+  - EnemySpawn
   layers:
   - Default
   - TransparentFX

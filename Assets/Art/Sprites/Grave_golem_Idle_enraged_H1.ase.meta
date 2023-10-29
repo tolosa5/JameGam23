@@ -1,0 +1,360 @@
+fileFormatVersion: 2
+guid: 3abcbb0343e638042ae519ac28d667e6
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Grave_golem_Idle_enraged_H1_Frame_0
+    originalName: 
+    pivot: {x: 0.5067265, y: -0.008474576}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 223
+      height: 118
+    spriteID: 2f74dd8c8c3ca564ba038c8e6b11269f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -18, y: -12}
+  - name: Grave_golem_Idle_enraged_H1_Frame_1
+    originalName: 
+    pivot: {x: 0.49056605, y: -0.008474576}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 130
+      width: 212
+      height: 118
+    spriteID: cce9795e0679d8741814fda03784449f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -27, y: 114}
+  - name: Grave_golem_Idle_enraged_H1_Frame_2
+    originalName: 
+    pivot: {x: 0.5167464, y: -0.008547009}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 381
+      width: 209
+      height: 117
+    spriteID: 90e8f8beb540c8c48b9a80f97025dbc8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -24, y: 363}
+  - name: Grave_golem_Idle_enraged_H1_Frame_3
+    originalName: 
+    pivot: {x: 0.54502374, y: -0.008547009}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 256
+      width: 211
+      height: 117
+    spriteID: e99ce9459ccc135458558b82f6506b70
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -17, y: 238}
+  - name: Grave_golem_Idle_enraged_H1_Frame_4
+    originalName: 
+    pivot: {x: 0.5291262, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 506
+      width: 206
+      height: 116
+    spriteID: a8fcca6f6f7267f4a9c5a310c219fb38
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -25, y: 489}
+  - name: Grave_golem_Idle_enraged_H1_Frame_5
+    originalName: 
+    pivot: {x: 0.56084657, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 630
+      width: 189
+      height: 117
+    spriteID: 52dfa819a785c9b4585f3846e708fe60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -28, y: 613}
+  - name: Grave_golem_Idle_enraged_H1_Frame_6
+    originalName: 
+    pivot: {x: 0.50581396, y: -0.008547009}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 880
+      width: 172
+      height: 117
+    spriteID: 60380dc0dba054d439de6a2f20d9251f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -45, y: 862}
+  - name: Grave_golem_Idle_enraged_H1_Frame_7
+    originalName: 
+    pivot: {x: 0.5645161, y: -0.008547009}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 755
+      width: 186
+      height: 117
+    spriteID: d1ac82695dfd72245a8c8909bc851176
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -27, y: 737}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -491907684
+    name: Grave_golem_Idle_enraged_H1
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Grave_golem_Idle_enraged_H1_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: -7
+        y: -15
+        width: 337
+        height: 165
+      spriteId: 2f74dd8c8c3ca564ba038c8e6b11269f
+    - name: Grave_golem_Idle_enraged_H1_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: -7
+        y: -15
+        width: 337
+        height: 165
+      spriteId: cce9795e0679d8741814fda03784449f
+    - name: Grave_golem_Idle_enraged_H1_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: -8
+        y: -17
+        width: 338
+        height: 166
+      spriteId: 90e8f8beb540c8c48b9a80f97025dbc8
+    - name: Grave_golem_Idle_enraged_H1_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: -8
+        y: -17
+        width: 338
+        height: 166
+      spriteId: e99ce9459ccc135458558b82f6506b70
+    - name: Grave_golem_Idle_enraged_H1_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: -10
+        y: -17
+        width: 340
+        height: 164
+      spriteId: a8fcca6f6f7267f4a9c5a310c219fb38
+    - name: Grave_golem_Idle_enraged_H1_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: -10
+        y: -17
+        width: 340
+        height: 164
+      spriteId: 52dfa819a785c9b4585f3846e708fe60
+    - name: Grave_golem_Idle_enraged_H1_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: -8
+        y: -17
+        width: 338
+        height: 166
+      spriteId: 60380dc0dba054d439de6a2f20d9251f
+    - name: Grave_golem_Idle_enraged_H1_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: -8
+        y: -17
+        width: 338
+        height: 166
+      spriteId: d1ac82695dfd72245a8c8909bc851176
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 256, y: 128}

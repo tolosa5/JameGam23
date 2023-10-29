@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 798b445c1583ccb40a50d87afad95148
+guid: 9bb9fd9660378a94286de17a0da3f971
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Grave_golem_Walk_enraged_H1_Frame_0
+  - name: Grave_golem_Attack_enraged_H1_Frame_0
     originalName: 
-    pivot: {x: 0.5067265, y: 0}
+    pivot: {x: 0.4892704, y: -0.008333334}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 223
-      height: 119
-    spriteID: 97172a680e1798b4bb5c5b74e10bc721
+      width: 233
+      height: 120
+    spriteID: 9427d913e22c41342a8e0dcc70a110ff
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -138,19 +138,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -22, y: -11}
-  - name: Grave_golem_Walk_enraged_H1_Frame_1
+    uvTransform: {x: -17, y: -12}
+  - name: Grave_golem_Attack_enraged_H1_Frame_1
     originalName: 
-    pivot: {x: 0.49056605, y: 0}
+    pivot: {x: 0.49130434, y: -0.008403362}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 131
-      width: 212
+      y: 132
+      width: 230
       height: 119
-    spriteID: cacc7f7bc78b1c44cb1bfa24eacb9fd2
+    spriteID: b3fa698632a8b9c49adecb3321d1ad39
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -158,19 +158,79 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -31, y: 116}
-  - name: Grave_golem_Walk_enraged_H1_Frame_2
+    uvTransform: {x: -18, y: 116}
+  - name: Grave_golem_Attack_enraged_H1_Frame_2
     originalName: 
-    pivot: {x: 0.5167464, y: 0}
+    pivot: {x: 0.53456223, y: -0.008547009}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 245
+      y: 4
+      width: 217
+      height: 117
+    spriteID: f6a4386334ff8734a8855d51a1e03176
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: -14}
+  - name: Grave_golem_Attack_enraged_H1_Frame_3
+    originalName: 
+    pivot: {x: 0.5324074, y: -0.008547009}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 245
+      y: 129
+      width: 216
+      height: 117
+    spriteID: 6a310d85f43a02a4fb060ea3c80646b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 224, y: 111}
+  - name: Grave_golem_Attack_enraged_H1_Frame_4
+    originalName: 
+    pivot: {x: 0.51598173, y: -0.008695652}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 245
+      y: 254
+      width: 219
+      height: 115
+    spriteID: ddd4894c83d900246b19be7124618451
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 224, y: 241}
+  - name: Grave_golem_Attack_enraged_H1_Frame_5
+    originalName: 
+    pivot: {x: 0.5450451, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 384
-      width: 209
+      width: 222
       height: 118
-    spriteID: b0e541317e57d68488ab537f9e74fb72
+    spriteID: 1751952d96b771c47a531637aa954688
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -178,59 +238,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -27, y: 367}
-  - name: Grave_golem_Walk_enraged_H1_Frame_3
+    uvTransform: {x: -13, y: 367}
+  - name: Grave_golem_Attack_enraged_H1_Frame_6
     originalName: 
-    pivot: {x: 0.54502374, y: 0}
+    pivot: {x: 0.5330396, y: -0.008547009}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 258
-      width: 211
-      height: 118
-    spriteID: 449cbf37bb3a5c84794388b95489cf00
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: -23, y: 240}
-  - name: Grave_golem_Walk_enraged_H1_Frame_4
-    originalName: 
-    pivot: {x: 0.5291262, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 235
-      y: 4
-      width: 206
-      height: 116
-    spriteID: 4e7ab05f7678a0c4283bd9e7e79b98b7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 202, y: -14}
-  - name: Grave_golem_Walk_enraged_H1_Frame_5
-    originalName: 
-    pivot: {x: 0.56084657, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 235
-      y: 128
-      width: 189
+      y: 259
+      width: 227
       height: 117
-    spriteID: bee0d30adcba17e489ed7bbf7e3f2820
+    spriteID: 53004c1692b47804abfd288030c74564
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -238,19 +258,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 193, y: 110}
-  - name: Grave_golem_Walk_enraged_H1_Frame_6
+    uvTransform: {x: -11, y: 241}
+  - name: Grave_golem_Attack_enraged_H1_Frame_7
     originalName: 
-    pivot: {x: 0.50581396, y: -0.007936508}
+    pivot: {x: 0.5, y: -0.008547009}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 235
-      y: 378
-      width: 172
+      x: 245
+      y: 377
+      width: 210
       height: 117
-    spriteID: bfab131a801d0244db89d6a646286dce
+    spriteID: b0a0ccf14cf7b0048b98e99c8ede6605
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -258,100 +278,80 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 176, y: 359}
-  - name: Grave_golem_Walk_enraged_H1_Frame_7
-    originalName: 
-    pivot: {x: 0.5645161, y: -0.007936508}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 235
-      y: 253
-      width: 186
-      height: 117
-    spriteID: 4af22c3617ef2524eab722ff41415fec
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 194, y: 234}
+    uvTransform: {x: 214, y: 359}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1858074685
-    name: Grave_golem_Walk_enraged_H1
+    guid: -864576174
+    name: Grave_golem_Attack_enraged_H1
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Grave_golem_Walk_enraged_H1_Frame_0
+    - name: Grave_golem_Attack_enraged_H1_Frame_0
       frameIndex: 0
       cellRect:
-        x: -11
+        x: -7
         y: -15
-        width: 341
+        width: 337
         height: 165
-      spriteId: 97172a680e1798b4bb5c5b74e10bc721
-    - name: Grave_golem_Walk_enraged_H1_Frame_1
+      spriteId: 9427d913e22c41342a8e0dcc70a110ff
+    - name: Grave_golem_Attack_enraged_H1_Frame_1
       frameIndex: 1
       cellRect:
-        x: -11
+        x: -7
         y: -15
-        width: 341
+        width: 337
         height: 165
-      spriteId: cacc7f7bc78b1c44cb1bfa24eacb9fd2
-    - name: Grave_golem_Walk_enraged_H1_Frame_2
+      spriteId: b3fa698632a8b9c49adecb3321d1ad39
+    - name: Grave_golem_Attack_enraged_H1_Frame_2
       frameIndex: 2
       cellRect:
-        x: -11
+        x: -8
         y: -17
-        width: 341
+        width: 338
         height: 166
-      spriteId: b0e541317e57d68488ab537f9e74fb72
-    - name: Grave_golem_Walk_enraged_H1_Frame_3
+      spriteId: f6a4386334ff8734a8855d51a1e03176
+    - name: Grave_golem_Attack_enraged_H1_Frame_3
       frameIndex: 3
       cellRect:
-        x: -14
-        y: -18
-        width: 344
-        height: 167
-      spriteId: 449cbf37bb3a5c84794388b95489cf00
-    - name: Grave_golem_Walk_enraged_H1_Frame_4
+        x: -8
+        y: -17
+        width: 338
+        height: 166
+      spriteId: 6a310d85f43a02a4fb060ea3c80646b6
+    - name: Grave_golem_Attack_enraged_H1_Frame_4
       frameIndex: 4
       cellRect:
-        x: -14
-        y: -18
-        width: 344
-        height: 165
-      spriteId: 4e7ab05f7678a0c4283bd9e7e79b98b7
-    - name: Grave_golem_Walk_enraged_H1_Frame_5
+        x: -6
+        y: -12
+        width: 427
+        height: 160
+      spriteId: ddd4894c83d900246b19be7124618451
+    - name: Grave_golem_Attack_enraged_H1_Frame_5
       frameIndex: 5
       cellRect:
-        x: -20
-        y: -18
-        width: 350
-        height: 165
-      spriteId: bee0d30adcba17e489ed7bbf7e3f2820
-    - name: Grave_golem_Walk_enraged_H1_Frame_6
+        x: -10
+        y: -17
+        width: 340
+        height: 164
+      spriteId: 1751952d96b771c47a531637aa954688
+    - name: Grave_golem_Attack_enraged_H1_Frame_6
       frameIndex: 6
       cellRect:
-        x: -18
-        y: -18
-        width: 336
-        height: 167
-      spriteId: bfab131a801d0244db89d6a646286dce
-    - name: Grave_golem_Walk_enraged_H1_Frame_7
+        x: -8
+        y: -17
+        width: 338
+        height: 166
+      spriteId: 53004c1692b47804abfd288030c74564
+    - name: Grave_golem_Attack_enraged_H1_Frame_7
       frameIndex: 7
       cellRect:
-        x: -18
-        y: -18
-        width: 336
-        height: 167
-      spriteId: 4af22c3617ef2524eab722ff41415fec
+        x: -8
+        y: -17
+        width: 338
+        height: 166
+      spriteId: b0a0ccf14cf7b0048b98e99c8ede6605
     linkedCells: []
     parentIndex: -1
   platformSettings: []

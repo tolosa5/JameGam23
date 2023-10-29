@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
-        DontDestroyOnLoad(gameObject);
+       // DontDestroyOnLoad(gameObject);
 
         aS = GetComponent<AudioSource>();
     }
@@ -86,6 +86,11 @@ public class GameManager : MonoBehaviour
                 Player.instance.gameObject.SetActive(true);
                 Player.instance.lifes = 3;
             }
+        }
+
+        if (scene.name == "TestLoading")
+        {
+            Destroy(Player.instance.gameObject);
         }
 
         if (timesLoaded <= 1)

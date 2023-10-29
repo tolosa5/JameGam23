@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5070928815178071604}
   - component: {fileID: 576679612581577568}
   - component: {fileID: 6606834744029527789}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Boss
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3090649998057896579}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: attackSpot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6201179056246668933}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: feet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -34,6 +34,7 @@ public class EnemyHealth : MonoBehaviour
 
     void EnemyDeath()
     {
+        Destroy(this.gameObject,1f);
         anim.SetTrigger("Die");
     }
 }

@@ -39,7 +39,7 @@ public class P_GameMangaer : MonoBehaviour
         else
             Destroy(this.gameObject);
 
-        DontDestroyOnLoad(managerInstance);
+        //DontDestroyOnLoad(managerInstance);
 
         #endregion
     }

@@ -85,7 +85,7 @@ public class Player : MonoBehaviour
         {
             instance = this;
         }
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
@@ -105,7 +105,11 @@ public class Player : MonoBehaviour
         Movement();
         JumpHandler();
         Hook();
-        
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Attack();
+        }
         //WallChecker();
         //PositionCorrection();
         //DestroyPiece();
@@ -314,6 +318,7 @@ public class Player : MonoBehaviour
 
     public void GetHit(int damageTaken)
     {
+        Debug.Log("MEHAHECHODAÑOELCABRON");
         lifes -= damageTaken;
         if (lifes == 2)
         {
@@ -350,12 +355,18 @@ public class Player : MonoBehaviour
             if (coll.CompareTag("Enemy"))
             {
                 coll.GetComponent<EnemyHealth>().GetHit();
+                Debug.Log("ENEMIGO DAÑADO!!!!!!!!!!!!!!!!!!");
             }
             else if (coll.CompareTag("Boss"))
             {
                 coll.GetComponent<BossHealth>().GetHit();
             }
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackSpot.position + transform.right, attackRange);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

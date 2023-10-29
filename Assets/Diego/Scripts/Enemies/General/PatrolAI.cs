@@ -13,10 +13,11 @@ public class PatrolAI : MonoBehaviour
 
     private void Start() 
     {
-        waypoints[0] = transform.right * 4;
-        waypoints[1] = transform.right * -4;
+       // waypoints[0] = transform.right * 4;
+       // waypoints[1] = transform.right * -4;
     }
 
+    /*
     public void PatrolLogic()
     {
         
@@ -32,7 +33,7 @@ public class PatrolAI : MonoBehaviour
             StartCoroutine(Wait());
         }
     }
-
+    */
     IEnumerator Wait()
     {
         isWaiting = true;

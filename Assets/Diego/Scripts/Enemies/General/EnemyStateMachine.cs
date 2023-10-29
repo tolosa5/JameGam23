@@ -28,7 +28,7 @@ public class EnemyStateMachine : MonoBehaviour
             //mirar si esta en su campo de vision
             Debug.Log("detectando");
             enemyDetectionScr.OnPlayerDetection();
-            patrolScr.PatrolLogic();
+           // patrolScr.PatrolLogic();
             //patrullar por los puntos que le diga
 
             break;

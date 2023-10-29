@@ -14,13 +14,14 @@ GameObject:
   - component: {fileID: 5981456134540717821}
   - component: {fileID: 3209595422238095936}
   - component: {fileID: 5174533854816938914}
+  - component: {fileID: -73657500996506751}
   - component: {fileID: 8996107378200991902}
   - component: {fileID: 332328228215243849}
   - component: {fileID: 9206980701240022884}
   - component: {fileID: 2802004212073600997}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MeleeEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,6 +211,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   isGrounded: 0
+--- !u!114 &-73657500996506751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4954212591654745426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964040dc55ee8ee488a61d3d27b96338, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifes: 3
 --- !u!114 &8996107378200991902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,9 +251,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   waitTime: 1
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &9206980701240022884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,7 +295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6972558867909151639}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: feet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6695726424809291634}
   - component: {fileID: 2744587591102035451}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: r
   m_TagString: Untagged
   m_Icon: {fileID: 0}

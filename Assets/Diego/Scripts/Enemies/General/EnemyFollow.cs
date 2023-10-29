@@ -34,7 +34,7 @@ public class EnemyFollow : MonoBehaviour
             IsGrounded();
             Debug.Log(IsGrounded());
             LookAtPlayer();
-            if (isGrounded)
+            if (isGrounded && Vector3.Distance(transform.position, player.position) >= attackRange)
             {
                 Vector3 target = new Vector3(player.position.x, rb.position.y);
                 Vector3 newPos = Vector3.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);

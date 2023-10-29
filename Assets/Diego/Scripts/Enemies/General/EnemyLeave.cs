@@ -9,12 +9,13 @@ public class EnemyLeave : MonoBehaviour
 
     float timer;
 
-    EnemyStateMachine stateMachine;
+    EnemyStateMachine stateMachineScr;
+    RangedState rangedStateScr;
     Transform player;
 
     private void Start() 
     {
-        stateMachine = GetComponent<EnemyStateMachine>();
+        
         player = GameObject.FindGameObjectWithTag("Player").transform;
         timer = maxPatience;
     }
@@ -36,7 +37,14 @@ public class EnemyLeave : MonoBehaviour
         {
             timer = maxPatience;
             Debug.Log("cambio");
-            stateMachine.SwitchState(1);
+            if (TryGetComponent<EnemyStateMachine>(out EnemyStateMachine stateMachine))
+            {
+                stateMachine.SwitchState(1);
+            }
+            if (TryGetComponent<RangedState>(out RangedState rangedState))
+            {
+                rangedState.SwitchState(1);
+            }
         }
     }
 }

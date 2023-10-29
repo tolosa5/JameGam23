@@ -19,7 +19,6 @@ public class RangedState : MonoBehaviour
     {
         enemyDetectionScr = GetComponent<EnemyDetection>();
         enemyFollowScr = GetComponent<EnemyFollow>();
-        //patrolScr = GetComponent<PatrolAI>();
         enemyLeave = GetComponent<EnemyLeave>();
         enemyShoot = GetComponentInChildren<EnemyShoot>();
     }
@@ -32,14 +31,12 @@ public class RangedState : MonoBehaviour
             //mirar si esta en su campo de vision
             Debug.Log("detectando");
             enemyDetectionScr.OnPlayerDetection();
-            //patrullar por los puntos que le diga
 
             break;
 
             case States.Following:
             //perseguirle
             Debug.Log("siguiendo");
-            //enemyFollowScr.FollowPlayer();
             if (!shooting)
             {
                 shooting = true;

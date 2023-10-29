@@ -11,6 +11,7 @@ public class CloseRoom : MonoBehaviour
     Animator anim;
 
     bool enemy;
+    public bool playerInside;
 
     private void Start() 
     {
@@ -28,6 +29,7 @@ public class CloseRoom : MonoBehaviour
         if (other.gameObject.CompareTag("Player") && enemy == true)
         {
             anim.SetTrigger("Close");
+            playerInside = true;
             Debug.Log("David Cage");
             //doorGO.SetActive(true);
         }

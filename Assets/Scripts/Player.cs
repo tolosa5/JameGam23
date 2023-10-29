@@ -59,6 +59,7 @@ public class Player : MonoBehaviour
     [Header("Attack")]
     [SerializeField] float attackRange;
     [SerializeField] LayerMask enemyLayer, bossLayer;
+    [SerializeField] Transform attackSpot;
 
     [Header("Hook")]
     public Camera cam;     
@@ -235,11 +236,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    void Flip()
-    {
-        
-    }
-
     #region Jump
     bool IsGrounded()
     {
@@ -348,7 +344,7 @@ public class Player : MonoBehaviour
 
     public void DealDamage()
     {
-        Collider2D coll = Physics2D.OverlapCircle(transform.position + transform.right, attackRange, enemyLayer);
+        Collider2D coll = Physics2D.OverlapCircle(attackSpot.position + transform.right, attackRange, enemyLayer);
         if (coll != null)
         {
             if (coll.CompareTag("Enemy"))
@@ -380,7 +376,7 @@ public class Player : MonoBehaviour
 
     void Death()
     {
-        aS.PlayOneShot(sfx[1]);
+        //aS.PlayOneShot(sfx[1]);
         GameManager.instance.StopAllCoroutines();
 
         if (GameManager.instance.tutorialAcabado)

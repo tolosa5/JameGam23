@@ -82,6 +82,7 @@ public class GameManager : MonoBehaviour
             if (!Player.instance.gameObject.activeSelf)
             {
                 Player.instance.gameObject.SetActive(true);
+                Player.instance.lifes = 3;
             }
         }
 

@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public static Player instance;
     Animator anim;
     [SerializeField] AnimatorOverrideController overrideOneHit, overrideTwoHit;
-    [HideInInspector] public float lifes;
+    [HideInInspector] public float lifes = 3;
     //[HideInInspector] public Vector3 startPosition;
 
     [SerializeField] AudioClip[] sfx;

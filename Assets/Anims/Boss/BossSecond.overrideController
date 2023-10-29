@@ -7,5 +7,9 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BossSecond
-  m_Controller: {fileID: 0}
-  m_Clips: []
+  m_Controller: {fileID: 9100000, guid: ae551150b63ba8f4581c1506a9ddda31, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 046709301db21704ea999bd17d599a03, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2567064dcc443f64485de9e60c7f9c41, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8215cb99dfead4748998438eab927673, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b97adc47f8fc17749809f7b1619092f7, type: 2}

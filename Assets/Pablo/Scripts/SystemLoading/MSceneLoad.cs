@@ -1,18 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class MSceneLoad : MonoBehaviour
+public static class MSceneLoad
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static string nextLVL;
+    public static float valueLoadingSlider;
 
-    // Update is called once per frame
-    void Update()
+    public static void LoadScene(string nameLvL)
     {
-        
+        Cursor.lockState = CursorLockMode.None;
+        nextLVL = nameLvL;
+        SceneManager.LoadScene("TestLoading");
     }
 }

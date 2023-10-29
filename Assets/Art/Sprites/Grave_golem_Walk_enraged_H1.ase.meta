@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f8bfeabcf80ce534b9199837b466f104
+guid: 798b445c1583ccb40a50d87afad95148
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 223
       height: 128
-    spriteID: 6fbe1db41ef4ff74e81561d5ec30db4b
+    spriteID: 97172a680e1798b4bb5c5b74e10bc721
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 140
       width: 212
       height: 128
-    spriteID: ad18ace127c6acb44b28d0551826fc25
+    spriteID: cacc7f7bc78b1c44cb1bfa24eacb9fd2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 411
       width: 209
       height: 127
-    spriteID: 52bba2f5fdab2bd4f8d7278b9c4e9fcb
+    spriteID: b0e541317e57d68488ab537f9e74fb72
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 276
       width: 211
       height: 127
-    spriteID: 70efb853607c6fb42889e91d121d974d
+    spriteID: 449cbf37bb3a5c84794388b95489cf00
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -210,7 +210,7 @@ ScriptedImporter:
       y: 546
       width: 206
       height: 125
-    spriteID: 59022cb9e77fa1c48bf294100df98e52
+    spriteID: 4e7ab05f7678a0c4283bd9e7e79b98b7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -230,7 +230,7 @@ ScriptedImporter:
       y: 679
       width: 189
       height: 125
-    spriteID: 5b7ca6f3ab45aa548b38031f4d4fad92
+    spriteID: bee0d30adcba17e489ed7bbf7e3f2820
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -250,7 +250,7 @@ ScriptedImporter:
       y: 4
       width: 172
       height: 126
-    spriteID: 12f510d1cf7517c428eeacb49cb520bc
+    spriteID: bfab131a801d0244db89d6a646286dce
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -270,7 +270,7 @@ ScriptedImporter:
       y: 812
       width: 186
       height: 126
-    spriteID: 02f07425da5fe3b4ea53c33736860c79
+    spriteID: 4af22c3617ef2524eab722ff41415fec
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -295,7 +295,7 @@ ScriptedImporter:
         y: -15
         width: 341
         height: 165
-      spriteId: 6fbe1db41ef4ff74e81561d5ec30db4b
+      spriteId: 97172a680e1798b4bb5c5b74e10bc721
     - name: Grave_golem_Walk_enraged_H1_Frame_1
       frameIndex: 1
       cellRect:
@@ -303,7 +303,7 @@ ScriptedImporter:
         y: -15
         width: 341
         height: 165
-      spriteId: ad18ace127c6acb44b28d0551826fc25
+      spriteId: cacc7f7bc78b1c44cb1bfa24eacb9fd2
     - name: Grave_golem_Walk_enraged_H1_Frame_2
       frameIndex: 2
       cellRect:
@@ -311,7 +311,7 @@ ScriptedImporter:
         y: -17
         width: 341
         height: 166
-      spriteId: 52bba2f5fdab2bd4f8d7278b9c4e9fcb
+      spriteId: b0e541317e57d68488ab537f9e74fb72
     - name: Grave_golem_Walk_enraged_H1_Frame_3
       frameIndex: 3
       cellRect:
@@ -319,7 +319,7 @@ ScriptedImporter:
         y: -18
         width: 344
         height: 167
-      spriteId: 70efb853607c6fb42889e91d121d974d
+      spriteId: 449cbf37bb3a5c84794388b95489cf00
     - name: Grave_golem_Walk_enraged_H1_Frame_4
       frameIndex: 4
       cellRect:
@@ -327,7 +327,7 @@ ScriptedImporter:
         y: -18
         width: 344
         height: 165
-      spriteId: 59022cb9e77fa1c48bf294100df98e52
+      spriteId: 4e7ab05f7678a0c4283bd9e7e79b98b7
     - name: Grave_golem_Walk_enraged_H1_Frame_5
       frameIndex: 5
       cellRect:
@@ -335,7 +335,7 @@ ScriptedImporter:
         y: -18
         width: 350
         height: 165
-      spriteId: 5b7ca6f3ab45aa548b38031f4d4fad92
+      spriteId: bee0d30adcba17e489ed7bbf7e3f2820
     - name: Grave_golem_Walk_enraged_H1_Frame_6
       frameIndex: 6
       cellRect:
@@ -343,7 +343,7 @@ ScriptedImporter:
         y: -18
         width: 336
         height: 167
-      spriteId: 12f510d1cf7517c428eeacb49cb520bc
+      spriteId: bfab131a801d0244db89d6a646286dce
     - name: Grave_golem_Walk_enraged_H1_Frame_7
       frameIndex: 7
       cellRect:
@@ -351,7 +351,7 @@ ScriptedImporter:
         y: -18
         width: 336
         height: 167
-      spriteId: 02f07425da5fe3b4ea53c33736860c79
+      spriteId: 4af22c3617ef2524eab722ff41415fec
     linkedCells: []
     parentIndex: -1
   platformSettings: []

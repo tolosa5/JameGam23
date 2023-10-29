@@ -21,4 +21,12 @@ public class Bullets : MonoBehaviour
     {
         transform.Translate(aimedPoint.normalized * (speed * Time.deltaTime));
     }
+
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.GetComponent<Player>().GetHit(1);
+        }
+    }
 }

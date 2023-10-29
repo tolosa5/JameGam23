@@ -10,7 +10,7 @@ public class ChangeTOGameScene : MonoBehaviour
 
     public void ChangeToGame()
     {
-        SceneManager.LoadScene(1);
+        MSceneLoad.LoadScene("TestMapa");
     }
 
     public void OptionsPanel()
@@ -33,6 +33,9 @@ public class ChangeTOGameScene : MonoBehaviour
 
     public void AppQuit()
     {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
         Application.Quit();
     }
 }

@@ -5,15 +5,46 @@ using UnityEngine;
 public class CloseRoom : MonoBehaviour
 {
     public GameObject goWalls;
+    [SerializeField] GameObject doorGO;
+    [SerializeField] GameObject wallGO;
 
-    public void StartCloseSystem()
+    Animator anim;
+
+    bool enemy;
+
+    private void Start() 
     {
-        StartCoroutine(ClosingRoomWhileBoosUP());
+        anim = GetComponent<Animator>();
     }
 
-    public IEnumerator ClosingRoomWhileBoosUP()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        yield return new WaitForSeconds(1f);
-        goWalls.SetActive(true);
+        //Si detecta al player y al enemigo (independientemente del n�mero de enemigos),
+        //activa la puerta
+        if (other.gameObject.CompareTag("Boss"))
+        {
+            enemy = true;
+        }
+        if (other.gameObject.CompareTag("Player") && enemy == true)
+        {
+            anim.SetTrigger("Close");
+            Debug.Log("David Cage");
+            //doorGO.SetActive(true);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        //Si no detecta al enemigo, se desactiva la puerta.
+        //IMPORTANTE HACER QUE EL ENEMIGO SALGA DEL TRIGGER ANTES DE DESTRUIRLO
+        if (other.gameObject.CompareTag("Boss"))
+        {
+            if (doorGO.activeInHierarchy)
+            {
+                Debug.Log("salio");
+                enemy = false;
+                anim.SetTrigger("Open");
+                //doorGO.SetActive(false);
+            }
+        }
     }
 }

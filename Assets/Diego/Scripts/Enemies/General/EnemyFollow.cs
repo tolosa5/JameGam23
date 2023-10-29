@@ -12,7 +12,7 @@ public class EnemyFollow : MonoBehaviour
     [SerializeField] float feetRadius = 0.5f;
 
     [SerializeField] Transform feet;
-    [SerializeField] LayerMask isGround;
+    [SerializeField] LayerMask isGround, isPlayer;
     [SerializeField] bool isGrounded;
 
     Animator anim;
@@ -44,6 +44,15 @@ public class EnemyFollow : MonoBehaviour
             {
                 anim.SetTrigger("Attack");
             }
+        }
+    }
+
+    public void DealDamage()
+    {
+        Collider2D coll = Physics2D.OverlapCircle(transform.position + transform.right, attackRange, isPlayer);
+        if (coll != null)
+        {
+            coll.GetComponent<Player>().GetHit(1);
         }
     }
 

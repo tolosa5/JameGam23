@@ -7,6 +7,9 @@ public class Player : MonoBehaviour
     public Player hookRef;
     Rigidbody2D rb;
     public static Player instance;
+    Animator anim;
+    [SerializeField] AnimatorOverrideController overrideOneHit, overrideTwoHit;
+    [HideInInspector] public float lifes = 3;
     //[HideInInspector] public Vector3 startPosition;
 
     [SerializeField] AudioClip[] sfx;
@@ -53,17 +56,11 @@ public class Player : MonoBehaviour
     enum States { Normal, Pushed };
     States currentState;
 
+    [Header("Attack")]
+    [SerializeField] float attackRange;
+    [SerializeField] LayerMask enemyLayer, bossLayer;
 
-
-
-
-
-
-
-
-    /// <summary>
-    /// Gancho
-    /// </summary>
+    [Header("Hook")]
     public Camera cam;     
     public LineRenderer lr;
     public LayerMask grappleMask;
@@ -74,9 +71,8 @@ public class Player : MonoBehaviour
 
     public bool canHook = true;
 
-    
     private List<Vector2> points = new List<Vector2>();
-    private bool isGrappling = false; // Variable para controlar si el gancho está activo
+    private bool isGrappling = false; // Variable para controlar si el gancho estï¿½ activo
 
     private void Awake()
     {
@@ -99,6 +95,8 @@ public class Player : MonoBehaviour
         sR = GetComponent<SpriteRenderer>();
         currenSprite = GetComponent<Sprite>();
         lr.positionCount = 0;
+
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -113,13 +111,13 @@ public class Player : MonoBehaviour
 
         //Debug.Log(WallChecker());
     }
-
+    #region Hook
     public void Hook()
     {
-        if (Input.GetMouseButtonDown(0) && !isGrappling && canHook) // Verifica si no se está agarrando
+        if (Input.GetMouseButtonDown(0) && !isGrappling && canHook) // Verifica si no se estï¿½ agarrando
         {
             
-            isGrappling = true; // Establece que el gancho está activo
+            isGrappling = true; // Establece que el gancho estï¿½ activo
 
             Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
             Vector2 direction = (mousePos - (Vector2)transform.position).normalized;
@@ -155,13 +153,12 @@ public class Player : MonoBehaviour
             }
             else
             {
-                // Si no hay puntos válidos, desactiva el gancho
+                // Si no hay puntos vï¿½lidos, desactiva el gancho
                 Detatch();
             }
         }
 
-
-        if (isGrappling) // Si el gancho está activo, continúa el comportamiento
+        if (isGrappling) // Si el gancho estï¿½ activo, continï¿½a el comportamiento
         {
             canHook = false;
             rb.gravityScale = 0;
@@ -185,7 +182,6 @@ public class Player : MonoBehaviour
 
     public void Detatch()
     {
-        
         isGrappling = false; // Desactiva el gancho
         rb.gravityScale = 9.73f;
         lr.positionCount = 0;
@@ -203,27 +199,8 @@ public class Player : MonoBehaviour
         return center;
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.green;
-        Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 direction = (mousePos - (Vector2)transform.position).normalized;
-
-        Gizmos.DrawLine(transform.position, (Vector2)transform.position + direction);
-
-        foreach (Vector2 point in points)
-        {
-            Gizmos.DrawLine(transform.position, point);
-        }
-    }
-
-
-
-
-
-
-
-
+    #endregion
+    
     void Movement()
     {
         h = Input.GetAxisRaw("Horizontal");
@@ -231,18 +208,17 @@ public class Player : MonoBehaviour
         dirMov = new Vector3(h * (Mathf.Clamp(maxMovSpeed, 2, 10)), rb.velocity.y);
         rb.velocity = dirMov;
 
+        if (dirMov.magnitude >= 0.1f)
+        {
+            anim.SetBool("Walking", true);
+        }
+        else
+        {
+            anim.SetBool("Walking", false);
+        }
+
         if (IsGrounded())
         {
-           
-            if (h > 0)
-            {
-                //sR.sprite = spritesPlayer[1];
-            }
-            else if (h < 0)
-            {
-                //sR.sprite = spritesPlayer[2];
-            }
-
             if (h == 0 && rb.velocity.x != 0)
             {
                 rb.velocity = Vector3.zero;
@@ -253,8 +229,6 @@ public class Player : MonoBehaviour
     #region Jump
     bool IsGrounded()
     {
-        
-        
         isGrounded = Physics2D.OverlapCircle(playerFeet.position, feetRadius, isGround);
         return isGrounded;
     }
@@ -313,6 +287,7 @@ public class Player : MonoBehaviour
     void Jump()
     {
         //aS.PlayOneShot(sfx[0]);
+        anim.SetTrigger("Jump");
         rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
 
         StartCoroutine(Wait());
@@ -327,44 +302,52 @@ public class Player : MonoBehaviour
     }
     #endregion
 
-    #region Wall
-
-    bool WallChecker()
+    public void GetHit(int damageTaken)
     {
-        //isPushed = Physics2D.OverlapCircle(wallDetector.position, detectorLenght, isGround);
-        return isPushed;
-    }
-
-    
-
-    /*
-    void PositionCorrection()
-    {
-        if (!WallChecker())
+        lifes -= damageTaken;
+        if (lifes == 2)
         {
-            if (transform.position.x != startPosition.x)
-            {
-                transform.position = Vector3.Lerp(new Vector3(transform.position.x, transform.position.y, transform.position.z),
-                    new Vector3(startPosition.x, transform.position.y, transform.position.z), backSpeed * Time.deltaTime);
-            }
+            anim.runtimeAnimatorController = overrideOneHit;
         }
-        else
+        else if (lifes == 1)
         {
-            if (Vector3.Distance(transform.position, startPosition) > 7)
-            {
-                Death();
-            }
+            anim.runtimeAnimatorController = overrideTwoHit;
+        }
+        else if (lifes <= 0)
+        {
+            Death();
         }
     }
-    */
-    #endregion
 
-    
+    public void GetHealed()
+    {
+        lifes++;
+    }
 
+    void Attack()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            anim.SetTrigger("Attack");
+        }
+    }
 
+    public void DealDamage()
+    {
+        Collider2D coll = Physics2D.OverlapCircle(transform.position + transform.right, attackRange, enemyLayer);
+        if (coll != null)
+        {
+            if (coll.CompareTag("Enemy"))
+            {
+                coll.GetComponent<EnemyHealth>().GetHit();
+            }
+            else if (coll.CompareTag("Boss"))
+            {
+                coll.GetComponent<BossHealth>().GetHit();
+            }
+        }
+    }
 
-
-    /*
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Death"))
@@ -378,13 +361,6 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Death"))
         {
             Death();
-        }
-
-        if (collision.gameObject.CompareTag("Coin"))
-        {
-            //efectos de cosas al pillarla
-            GameManager.instance.GetCoin();
-            Destroy(collision.gameObject);
         }
     }
 
@@ -402,7 +378,4 @@ public class Player : MonoBehaviour
             GameManager.instance.FailedTutorial();
         }
     }
-    
-     
-     */
 }

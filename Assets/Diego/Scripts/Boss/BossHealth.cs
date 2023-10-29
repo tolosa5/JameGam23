@@ -4,15 +4,45 @@ using UnityEngine;
 
 public class BossHealth : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] int lifes;
+    Animator anim;
+    [SerializeField] AnimatorOverrideController firstOverride, secondOverride, thirdOverride;
+
+    private void Start() 
+    {
+        anim = GetComponent<Animator>();
+    }
+
+    public void GetHit()
+    {
+        lifes--;
+
+        if (lifes <= (lifes * 3 / 4))
+        {
+            anim.runtimeAnimatorController = firstOverride;
+        }
+        else if (lifes <= (lifes/2))
+        {
+            Enrage();
+            anim.runtimeAnimatorController = secondOverride;
+        }
+        else if (lifes <= (lifes / 4))
+        {
+            anim.runtimeAnimatorController = thirdOverride;
+        }
+        else if (lifes <= 0)
+        {
+            BossDeath();
+        }
+    }
+
+    void Enrage()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    void BossDeath()
     {
-        
+        anim.SetTrigger("Death");
     }
 }

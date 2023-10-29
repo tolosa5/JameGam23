@@ -10,8 +10,8 @@ public class MLoading : MonoBehaviour
     [SerializeField] private Slider sliderLoading;
     private void Start()
     {
-       // string LoadLvL = MSceneLoad.nextLVL;
-      //  StartCoroutine(StartLoad(LoadLvL));
+        string LoadLvL = MSceneLoad.nextLVL;
+        StartCoroutine(StartLoad(LoadLvL));
     }
 
     IEnumerator StartLoad(string NextScene)
@@ -26,7 +26,7 @@ public class MLoading : MonoBehaviour
         {
             float progreso = Mathf.Clamp01(operation.progress / 3f);  //Falseamos la carga de escena, haciendo que carga la escena pero solo una parte del slider
             sliderLoading.value = progreso;
-          //  MSceneLoad.valueLoadingSlider = progreso;
+            MSceneLoad.valueLoadingSlider = progreso;
             if (operation.progress >= 0.9f)
             {
                 operation.allowSceneActivation = true;

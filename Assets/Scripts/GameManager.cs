@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector] public int timesLoaded;
 
+    public bool haveKey;
+
     private void Awake()
     {
         if (instance != null)

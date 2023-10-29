@@ -16,7 +16,7 @@ public class MLoading : MonoBehaviour
 
     IEnumerator StartLoad(string NextScene)
     {
-        yield return new WaitForSeconds(1f); //De momento esto para que dure la pantalla de carga
+        yield return new WaitForSeconds(4f); //De momento esto para que dure la pantalla de carga
 
         AsyncOperation operation = SceneManager.LoadSceneAsync(NextScene);
 

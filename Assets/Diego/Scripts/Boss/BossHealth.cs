@@ -39,4 +39,9 @@ public class BossHealth : MonoBehaviour
     {
         anim.SetTrigger("Death");
     }
+
+    public void End()
+    {
+        GameManager.instance.Win();
+    }
 }

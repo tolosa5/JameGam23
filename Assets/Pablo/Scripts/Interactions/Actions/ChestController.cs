@@ -14,6 +14,7 @@ public class ChestController : MonoBehaviour
         {
             isOpen = true;
             GameManager.instance.haveKey = true;
+            Player.instance.GetHealed();
             Debug.Log("Chest is open");
         }
     }

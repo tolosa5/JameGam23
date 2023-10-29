@@ -8,6 +8,7 @@ public class BossRun : StateMachineBehaviour
     [SerializeField] float attackRange = 3f;
     [SerializeField] float feetRadius;
     [SerializeField] LayerMask isGround;
+    Transform attackSpot;
 
     bool isGrounded;
 

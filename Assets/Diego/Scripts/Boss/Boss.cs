@@ -6,10 +6,22 @@ public class Boss : MonoBehaviour
 {
     Transform player;
     public bool isFlipped = false;
+    GameObject closeRoomGO;
+    CloseRoom closeRoomScr;
+    Animator anim;
 
     private void Start() 
     {
+        closeRoomGO = GameObject.FindGameObjectWithTag("Player");
+        closeRoomScr = GetComponent<CloseRoom>();
+        anim = GetComponent<Animator>();
+
         player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
+    public void GoIntro()
+    {
+        anim.SetTrigger("Intro");
     }
 
     public void LookAtPlayer()

@@ -23,7 +23,6 @@ public class BossHealth : MonoBehaviour
         }
         else if (lifes <= (lifes/2))
         {
-            Enrage();
             anim.runtimeAnimatorController = secondOverride;
         }
         else if (lifes <= (lifes / 4))
@@ -34,11 +33,6 @@ public class BossHealth : MonoBehaviour
         {
             BossDeath();
         }
-    }
-
-    void Enrage()
-    {
-        
     }
 
     void BossDeath()

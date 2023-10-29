@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerAttack3
+  m_Name: BossAttack_dea
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,15 +21,21 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 709698218, guid: e1bb0d0e266c378488da876ca1061f42, type: 3}
+      value: {fileID: 1919070832, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
     - time: 0.125
-      value: {fileID: 1171712971, guid: e1bb0d0e266c378488da876ca1061f42, type: 3}
+      value: {fileID: 951425020, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
     - time: 0.25
-      value: {fileID: 588814327, guid: e1bb0d0e266c378488da876ca1061f42, type: 3}
-    - time: 0.33333334
-      value: {fileID: 1459894712, guid: e1bb0d0e266c378488da876ca1061f42, type: 3}
-    - time: 0.41666666
-      value: {fileID: 394194148, guid: e1bb0d0e266c378488da876ca1061f42, type: 3}
+      value: {fileID: 1619085409, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
+    - time: 0.375
+      value: {fileID: -451343728, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
+    - time: 0.5416667
+      value: {fileID: -692906465, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
+    - time: 0.875
+      value: {fileID: 1278580713, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
+    - time: 1.0416666
+      value: {fileID: -1579006648, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
+    - time: 1.2083334
+      value: {fileID: -1841261280, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -52,17 +58,20 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 709698218, guid: e1bb0d0e266c378488da876ca1061f42, type: 3}
-    - {fileID: 1171712971, guid: e1bb0d0e266c378488da876ca1061f42, type: 3}
-    - {fileID: 588814327, guid: e1bb0d0e266c378488da876ca1061f42, type: 3}
-    - {fileID: 1459894712, guid: e1bb0d0e266c378488da876ca1061f42, type: 3}
-    - {fileID: 394194148, guid: e1bb0d0e266c378488da876ca1061f42, type: 3}
+    - {fileID: 1919070832, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
+    - {fileID: 951425020, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
+    - {fileID: 1619085409, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
+    - {fileID: -451343728, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
+    - {fileID: -692906465, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
+    - {fileID: 1278580713, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
+    - {fileID: -1579006648, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
+    - {fileID: -1841261280, guid: 214ab3993208d7240b3cfe48917627f8, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.4583333
+    m_StopTime: 1.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -82,8 +91,8 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.33333334
-    functionName: DealDamage
+  - time: 0.875
+    functionName: Attack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

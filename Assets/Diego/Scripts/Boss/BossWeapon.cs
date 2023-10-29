@@ -10,16 +10,14 @@ public class BossWeapon : MonoBehaviour
     [SerializeField] float attackRange = 1f;
     [SerializeField] LayerMask attackMask;
 
+    [SerializeField] Transform attackSpot;
+
     public void Attack()
     {
-        Vector3 pos = transform.position;
-        pos += transform.right * attackOffset.x;
-        pos += transform.up * attackOffset.y;
-
-        Collider2D coll = Physics2D.OverlapCircle(pos, attackRange, attackMask);
+        Collider2D coll = Physics2D.OverlapCircle(attackSpot.position, attackRange, attackMask);
         if (coll != null)
         {
-            //coll.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
+            coll.GetComponent<Player>().GetHit(2);
         }
     }
 }

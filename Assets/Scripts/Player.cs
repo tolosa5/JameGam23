@@ -217,6 +217,15 @@ public class Player : MonoBehaviour
             anim.SetBool("Walking", false);
         }
 
+        if (h > 0)
+        {
+            transform.eulerAngles = Vector3.zero;
+        }
+        else if (h < 0)
+        {
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+
         if (IsGrounded())
         {
             if (h == 0 && rb.velocity.x != 0)
@@ -224,6 +233,11 @@ public class Player : MonoBehaviour
                 rb.velocity = Vector3.zero;
             }
         }
+    }
+
+    void Flip()
+    {
+        
     }
 
     #region Jump

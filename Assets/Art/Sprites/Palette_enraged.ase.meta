@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f12ec2b46c260c0459a1e2ef6c92417f
+guid: b07c369e5fc3db8429e0aedf79ebf29d
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -118,75 +118,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  animatedSpriteImportData:
-  - name: Grave_golem_Idle_Frame_0
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 124
-      height: 105
-    spriteID: cc9fbe202f1ac6c48b0b572abf5661a4
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 2, y: 4}
-  - name: Grave_golem_Idle_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 117
-      width: 124
-      height: 105
-    spriteID: 6b763ed7545bc6148839413b501c21e3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 2, y: 117}
+  animatedSpriteImportData: []
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 627433387
-    name: Grave_golem_Idle
+    guid: -974678772
+    name: Palette_enraged
     layerFlags: 0
     layerType: 0
     blendMode: 0
-    cells:
-    - name: Grave_golem_Idle_Frame_0
-      frameIndex: 0
-      cellRect:
-        x: 0
-        y: 0
-        width: 128
-        height: 128
-      spriteId: cc9fbe202f1ac6c48b0b572abf5661a4
-    - name: Grave_golem_Idle_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 0
-        y: 0
-        width: 128
-        height: 128
-      spriteId: 6b763ed7545bc6148839413b501c21e3
+    cells: []
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 128, y: 128}
+  canvasSize: {x: 16, y: 2}

@@ -208,7 +208,7 @@ MonoBehaviour:
     m_Bits: 8
   isPlayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   isGrounded: 0
 --- !u!114 &8996107378200991902
 MonoBehaviour:

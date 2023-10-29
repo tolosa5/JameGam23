@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &5044598055043609688
+--- !u!1001 &8300751518402207986
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 481101725531730185, guid: f65f96075a5d16f438acf49a40d354d7, type: 3}
       propertyPath: m_Name
-      value: RangedEnemy Variant
+      value: RangedEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 1409589326486566188, guid: f65f96075a5d16f438acf49a40d354d7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51,18 +51,6 @@ PrefabInstance:
     - target: {fileID: 1409589326486566188, guid: f65f96075a5d16f438acf49a40d354d7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4868410088659721580, guid: f65f96075a5d16f438acf49a40d354d7, type: 3}
-      propertyPath: m_Color.b
-      value: 0.38042897
-      objectReference: {fileID: 0}
-    - target: {fileID: 4868410088659721580, guid: f65f96075a5d16f438acf49a40d354d7, type: 3}
-      propertyPath: m_Color.g
-      value: 0.7614015
-      objectReference: {fileID: 0}
-    - target: {fileID: 4868410088659721580, guid: f65f96075a5d16f438acf49a40d354d7, type: 3}
-      propertyPath: m_Color.r
-      value: 0.9716981
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

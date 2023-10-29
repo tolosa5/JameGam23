@@ -8,11 +8,20 @@ public class ChestController : MonoBehaviour
     public GameObject CanvasHelpOpen;
     public Interactable interactable;
 
+    private Animator animatorChest;
+
+
+    private void Start()
+    {
+        animatorChest = GetComponent<Animator>();
+    }
+
     public void OpenChest()
     {
         if (!isOpen)
         {
             isOpen = true;
+            animatorChest.SetTrigger("Open");
             GameManager.instance.haveKey = true;
             Debug.Log("Chest is open");
         }
